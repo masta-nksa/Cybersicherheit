@@ -9,14 +9,14 @@ reihenfolge: 2
 
 # Gruppen- und Themenzettel: Abschlusspräsentation Cybersicherheit
 
-**Wird in L1 abgegeben – die Gruppe bleibt bis L5 bestehen.**
+**Wird in Lektion 1 abgegeben – die Gruppe bleibt bis Lektion 5 bestehen.**
 
 ## Rahmen
 
 - Gruppengrösse: 2–3 Personen
 - Ihre Gruppe erhält eines von 9 Themenclustern (Zuteilung durch die Lehrperson, per Zufall)
-- In L5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 4 Min.)
-- Die Hauptvorbereitungszeit erhalten Sie in L4 (ganze Lektion); achten Sie aber schon in L2 (Cybertime) und L3 (Schutzmassnahmen) auf Bezüge zu Ihrem Thema
+- In Lektion 5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 4 Min.)
+- Die Hauptvorbereitungszeit erhalten Sie in Lektion 4 (ganze Lektion); achten Sie aber schon in Lektion 2 (Cybertime) und Lektion 3 (Schutzmassnahmen) auf Bezüge zu Ihrem Thema
 - Sie erhalten für Ihre Gruppe einen privaten Teams-Kanal – legen Sie dort alle Unterlagen (Präsentation, Prüfungsfragen) ab
 
 ## Die 9 Themencluster
@@ -41,4 +41,4 @@ reihenfolge: 2
 4. **Ein reales Beispiel** – idealerweise ein Fall aus der Schweiz
 5. **2–3 Prüfungsfragen** zu Ihrem Cluster inkl. Musterantwort – diese können in die Prüfung einfliessen
 
-*(Die genaue Aufgabenstellung inkl. Rechercheauftrag erhalten Sie ausführlich in L4.)*
+*(Die genaue Aufgabenstellung inkl. Rechercheauftrag erhalten Sie ausführlich in Lektion 4.)*

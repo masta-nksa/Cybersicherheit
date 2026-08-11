@@ -41,4 +41,4 @@ Die neun Cluster folgen bereits einer sinnvollen thematischen Dramaturgie – ic
 
 - **Timer strikt durchsetzen:** Sichtbarer Countdown (z. B. Beamer), Ansage bei 30 Sekunden verbleibend. Bei 9 Gruppen gibt es keinen Zeitpuffer – ein konsequentes Timing ist entscheidend, damit auch das Fazit noch genug Platz hat.
 - **Peer-Feedback läuft mit:** Erklären Sie zu Beginn, dass das Kurzformular **während** jeder Präsentation (nicht erst am Schluss) ausgefüllt wird – so bleibt am Ende kein zusätzlicher Zeitblock nötig.
-- **Nach der Lektion:** Sammeln Sie alle Präsentationsunterlagen aus den Teams-Kanälen und stellen Sie sie zentral allen SuS zur Verfügung (z. B. über GitHub Pages) – das dient als Repetitionsgrundlage und als Lösung für allfällige Absenzen in L5.
+- **Nach der Lektion:** Sammeln Sie alle Präsentationsunterlagen aus den Teams-Kanälen und stellen Sie sie zentral allen SuS zur Verfügung – z. B. als weitere Dateien im Ordner `lsg/` dieser Website. Das dient als Repetitionsgrundlage und als Lösung für allfällige Absenzen in Lektion 5.

@@ -5,7 +5,7 @@ kurz: "Alle sechs Pakete auf einen Blick – nicht nur das eigene"
 reihenfolge: 3
 ---
 
-# Musterlösung: Schutzmassnahmen (L3)
+# Musterlösung: Schutzmassnahmen (Lektion 3)
 
 **Wird nach der Lektion an die ganze Klasse verteilt – deckt alle 11 Punkte ab, nicht nur das eigene Paket. Dient auch als Lösung für Absenzen.**
 

@@ -35,7 +35,7 @@ Halten Sie während des Spielens fest, welche Angriffstechniken vorkommen und wi
 
 ## Teil 3: Brücke zu Ihrem Präsentationsthema
 
-Sie haben in L1 ein Themencluster zugeteilt bekommen. Prüfen Sie:
+Sie haben in Lektion 1 ein Themencluster zugeteilt bekommen. Prüfen Sie:
 
 - Ist Ihr Cluster im Spiel direkt vorgekommen? Welche Begriffe aus dem Glossar gehören dazu?
 - Falls Ihr Cluster **nicht** direkt vorkam: Überlegen Sie sich mind. eine inhaltliche Verbindung zu dem, was Sie im Spiel erlebt haben (z. B. ähnliches Vorgehen, ähnliche Schutzmassnahme).

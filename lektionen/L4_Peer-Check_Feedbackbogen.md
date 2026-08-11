@@ -31,7 +31,7 @@ Beantworten Sie die 2–3 Prüfungsfragen der Partnergruppe, **ohne nachzuschlag
 
   ______________________________________________
 
-- Konnten Sie die Fragen mit dem Wissen aus L1–L3 beantworten, oder war Spezialwissen nötig, das so nicht vermittelt wurde?
+- Konnten Sie die Fragen mit dem Wissen aus den Lektionen 1 bis 3 beantworten, oder war Spezialwissen nötig, das so nicht vermittelt wurde?
 
   ______________________________________________
 

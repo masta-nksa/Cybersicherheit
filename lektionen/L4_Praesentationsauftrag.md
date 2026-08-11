@@ -9,27 +9,27 @@ reihenfolge: 1
 
 # Auftrag: Abschlusspräsentation Cybersicherheit
 
-**Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in L5 (ca. 4 Min.)**
+**Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in Lektion 5 (ca. 4 Min.)**
 
 Mein Cluster: ______________________________
 
-Enthält (siehe Gruppenzettel aus L1): ______________________________
+Enthält (siehe Gruppenzettel aus Lektion 1): ______________________________
 
 ## Ziel
 
-Sie werden zu Expertinnen und Experten für Ihr Cluster und vermitteln der Klasse in L5 kompakt und lebensnah, was man darüber wissen sollte. Ihre Prüfungsfragen (Teil 5) können in die Prüfung einfliessen.
+Sie werden zu Expertinnen und Experten für Ihr Cluster und vermitteln der Klasse in Lektion 5 kompakt und lebensnah, was man darüber wissen sollte. Ihre Prüfungsfragen (Teil 5) können in die Prüfung einfliessen.
 
 ## Ihr Auftrag umfasst 5 Teile
 
 ### 1. Beschreibung
-Was ist die/sind die Angriffsart(en) Ihres Clusters, wie funktionieren sie? Nutzen Sie das Cybertime-Glossar aus L2 als Ausgangspunkt und ergänzen Sie bei Bedarf mit eigener Recherche.
+Was ist die/sind die Angriffsart(en) Ihres Clusters, wie funktionieren sie? Nutzen Sie das Cybertime-Glossar aus Lektion 2 als Ausgangspunkt und ergänzen Sie bei Bedarf mit eigener Recherche.
 
 ### 2. Gefährlichkeit
 - Für **Privatpersonen**: Welche Konsequenzen kann ein solcher Angriff haben?
 - Für **Unternehmen**: Welche Konsequenzen kann ein solcher Angriff haben?
 
 ### 3. Schutzmassnahmen
-Konkrete, alltagstaugliche Tipps. Greifen Sie, wo passend, auf die Schutzmassnahmen aus L3 zurück – aber beziehen Sie sie konkret auf Ihr Cluster.
+Konkrete, alltagstaugliche Tipps. Greifen Sie, wo passend, auf die Schutzmassnahmen aus Lektion 3 zurück – aber beziehen Sie sie konkret auf Ihr Cluster.
 
 ### 4. Reales Beispiel
 Recherchieren Sie einen echten Vorfall, idealerweise aus der Schweiz. Was war die Ursache, wie wurde er entdeckt/abgewehrt (oder eben nicht)?

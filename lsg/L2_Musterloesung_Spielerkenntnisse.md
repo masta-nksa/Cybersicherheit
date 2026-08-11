@@ -5,9 +5,9 @@ kurz: "Die wichtigsten Angriffstechniken aus dem Spiel – auch ohne Mitspielen 
 reihenfolge: 3
 ---
 
-# Musterlösung / Zusammenfassung: Cybertime (L2)
+# Musterlösung / Zusammenfassung: Cybertime (Lektion 2)
 
-**Für Lehrperson sowie für SuS, die L2 verpasst haben.**
+**Für Lehrperson sowie für SuS, die Lektion 2 verpasst haben.**
 
 ## Worum geht es im Spiel?
 

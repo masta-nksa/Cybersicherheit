@@ -10,9 +10,6 @@ permalink: /konzept.html
 
 # Konzept: Unterrichtseinheit «Cybersicherheit» (5 × 45 Min.)
 
-**Stufe:** 2. Kanti, Kanton Aargau, Informatik (1 Wochenlektion)
-**Status:** Konzeptphase – Inhalte/Aufgaben werden im nächsten Schritt ausgearbeitet
-
 ---
 
 ## 1. Rahmenbedingungen
@@ -50,7 +47,7 @@ Die SuS...
 - **Lernen durch Lehren (Gruppenpräsentationen):** Jede Gruppe vertieft sich in ein Themencluster und vermittelt es der Klasse – so wird nicht 1:1 der alte 12-Begriffe-Katalog abgearbeitet, sondern die Klasse deckt gemeinsam die ganze Bandbreite ab
 - **Lebensweltbezug:** Wo möglich aktuelle CH-Fallbeispiele (z. B. Berichte des Bundesamts für Cybersicherheit BACS, vormals NCSC) statt nur abstrakter Definitionen; Einstieg über eigene Erfahrungen der SuS (Phishing-SMS, Instagram-Hacks, Fake-Shops etc.)
 - **Selbständigkeit ≠ allein gelassen sein:** Selbststudium-Phasen sind klar zeitlich begrenzt und mit Kontrollfragen versehen; die Lehrperson zirkuliert in Arbeitsphasen aktiv als Coach
-- **Nachvollziehbarkeit bei Absenzen:** Zu den zentralen Aufträgen (Malware-Steckbriefe, Cybertime-Erkenntnisse, Schutzmassnahmen-Pakete, Präsentationsunterlagen) wird jeweils eine Musterlösung/Zusammenfassung bereitgestellt, damit SuS nach einer verpassten Lektion eigenständig aufholen können
+- **Nachvollziehbarkeit bei Absenzen:** Zu den zentralen Aufträgen (Malware-Steckbriefe, Cybertime-Erkenntnisse, Schutzmassnahmen-Pakete, Präsentationsunterlagen) wird jeweils eine Musterlösung/Zusammenfassung bereitgestellt, damit SuS nach einer verpassten Lektion eigenständig aufholen können. Alle Lösungen liegen auf der Website unter `/lsg/`; diese Seite ist von den SuS-Seiten aus bewusst **nicht** verlinkt – den Link geben Sie nach Bedarf selbst weiter
 
 ---
 
@@ -75,21 +72,21 @@ Die SuS...
 - **Selbständiger Auftrag (Partnerarbeit):** Steckbriefe zu Virus, Wurm, Trojaner, Ransomware, Spyware/Adware anhand Text + Kontrollfragen
 - **Gruppeneinteilung & Themenvergabe** für die Abschlusspräsentation (siehe Abschnitt 6), damit die Gruppen ihr Thema schon während L2/L3 im Hinterkopf haben, bevor ihnen in L4 eine ganze Lektion für die Vorbereitung zur Verfügung steht
 - **Take-Aways:** 2–3 Verständnisfragen (z. B. via Kahoot/Mentimeter, falls an der Schule vorhanden)
-- **Lösung:** Musterlösung zu den Malware-Steckbriefen wird bereitgestellt (für Absenzen)
+- **Lösung:** Musterlösung zu den Malware-Steckbriefen unter `/lsg/` (für Absenzen)
 
 ### L2 – Cybertime: Angriffsperspektive erleben
 - **Einstieg (5 Min.):** Ziel und Rahmen des Spiels erklären; Glossar der 19 Cybertime-Begriffe als Nachschlagehilfe verteilen
 - **Spielphase (ca. 30 Min.):** SuS spielen einzeln; Beobachtungsauftrag parallel («Welche 3 Angriffstechniken kommen vor? Wie hätten Sie sich als Opfer schützen können?»)
 - **Reflexion im Plenum (max. 8 Min.):** Überraschendste Erkenntnis? Bezug zu eigenem Alltag?
 - **Brücke zu Präsentationsauftrag:** SuS ordnen die im Spiel erlebten Begriffe ihrem eigenen Themencluster zu
-- **Lösung:** Kurzzusammenfassung der wichtigsten Spielerkenntnisse (erlebte Angriffstechniken + Schutz) wird bereitgestellt – das Spiel selbst lässt sich bei Absenz nicht einfach nachholen, die Zusammenfassung sichert trotzdem den Lerninhalt
+- **Lösung:** Kurzzusammenfassung der wichtigsten Spielerkenntnisse (erlebte Angriffstechniken + Schutz) unter `/lsg/` – das Spiel selbst lässt sich bei Absenz nicht einfach nachholen, die Zusammenfassung sichert trotzdem den Lerninhalt
 
 ### L3 – Schutz-Theorie kompakt: Virenschutz, Firewall & Verhaltensregeln
 - **Kurzinput (ca. 5–8 Min.):** Technische Schutzebene im Schnelldurchgang – wie Antivirus (Signaturen/Hash-Werte) und Firewall (Ports) grundsätzlich funktionieren, inkl. Grenzen («keine 100 %-Sicherheit»); SHA-256-Tool als optionale Vertiefung für Interessierte
 - **Gruppenpuzzle/Jigsaw (ca. 25 Min.):** Die 11 Schutzmassnahmen aus oinf.ch werden auf ca. 5–6 Pakete (je 1–2 Punkte) aufgeteilt; die Puzzle-Gruppen sind hier bewusst grösser und unabhängig von den festen (max. 3-köpfigen) Präsentationsgruppen – jede Gruppe erarbeitet ihr Paket inkl. Begründung («Warum?») und stellt es der Klasse in max. 1–2 Min. vor
 - **Aktualisierung integriert statt separat:** Neuere Aspekte (siehe Abschnitt 7) werden direkt in die passenden Pakete eingebaut, z. B. 2FA/Passkeys bei «gute Passwörter», KI-Phishing/Quishing bei «verdächtige Mails/Links»
 - **Take-Aways:** SuS ordnen 2–3 im Cybertime-Spiel erlebte Situationen der passenden Schutzmassnahme zu
-- **Lösung:** Zusammenfassung aller Schutzmassnahmen-Pakete wird im Anschluss allen SuS zugänglich gemacht (für Absenzen)
+- **Lösung:** Zusammenfassung aller Schutzmassnahmen-Pakete unter `/lsg/` – Link im Anschluss an alle SuS weitergeben (deckt alle 11 Punkte ab, nicht nur das eigene Paket)
 
 ### L4 – Präsentationsvorbereitung (ganze Lektion)
 - **Kurzer Rahmen (ca. 5 Min.):** Anforderungen/Checkliste der Präsentation nochmals in Erinnerung rufen (Beschreibung, Gefährlichkeit, Schutzmassnahmen, konkretes Beispiel) sowie den neuen Zusatzauftrag erklären: 2–3 Prüfungsfragen inkl. Musterantwort zum eigenen Cluster
@@ -101,7 +98,7 @@ Die SuS...
 - **Kurzpräsentationen** aller Gruppen (bei 9 Gruppen: ca. 4 Min. pro Gruppe = 36 Min.)
 - **Peer-Feedback:** Kurzformular pro Gruppe («1 Learning»), läuft schriftlich parallel zu den Präsentationen mit – kein zusätzlicher Zeitblock nötig
 - **Abschluss (5 Min.):** Gemeinsames Fazit – «Was sind für Sie persönlich die 3 wichtigsten Verhaltensregeln?» (z. B. Padlet/Mentimeter)
-- **Lösung:** Alle Präsentationsunterlagen/Kurzzusammenfassungen werden gesammelt allen SuS zugänglich gemacht (für Absenzen und als Repetitionsgrundlage)
+- **Lösung:** Alle Präsentationsunterlagen aus den Teams-Kanälen gesammelt allen SuS zugänglich machen (für Absenzen und als Repetitionsgrundlage) – z. B. als weitere Dateien unter `/lsg/`
 
 ---
 
@@ -128,7 +125,7 @@ Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte A
 4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über die [Halbjahresberichte des Bundesamts für Cybersicherheit BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html) recherchierbar)
 5. 2–3 Prüfungsfragen inkl. Musterantwort zum eigenen Cluster
 
-**Zur Verwendung der Prüfungsfragen:** Die Präsentation selbst bleibt unbenotet, die Fragen fliessen aber in eine abschliessende Bewertung ein. Sie sichten/kuratieren die eingereichten Fragen nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 9 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
+**Zur Verwendung der Prüfungsfragen:** Die eingereichten Fragen können in die Prüfung einfliessen. Sie sichten/kuratieren sie nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 9 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
 
 Format bewusst offen (Slides, Plakat, kurzer Skit/Rollenspiel) – fördert Praxisnähe und Abwechslung in L5.
 
@@ -148,9 +145,3 @@ Die oinf.ch-Grundlagen sind inhaltlich weiterhin solide, folgende Ergänzungen e
 
 Diese Punkte eignen sich gut zur Integration in die Schutzmassnahmen-Pakete in L3 und als Rechercheanstoss für Cluster 9.
 
----
-
-## 8. Nächste Schritte
-
-1. Ausarbeitung der konkreten Aufträge/Arbeitsblätter pro Lektion (L1–L5) inkl. der Musterlösungen/Zusammenfassungen für Absenzen
-2. Umsetzung/Hosting wie gewohnt: Claude-Projekt → Claude Code → Bereitstellung aller Materialien (inkl. Lösungen) über GitHub Pages

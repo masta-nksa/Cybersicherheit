@@ -1,6 +1,6 @@
 # Cybersicherheit – Unterrichtseinheit (5 Lektionen)
 
-Materialien zur Unterrichtseinheit «Cybersicherheit» (Informatik, 2. Kanti).
+Materialien zur Unterrichtseinheit «Cybersicherheit».
 Die Website wird von GitHub Pages direkt aus diesem Repository mit Jekyll gebaut –
 **die Markdown-Dateien sind die Quelle, generiertes HTML wird nie eingecheckt.**
 
