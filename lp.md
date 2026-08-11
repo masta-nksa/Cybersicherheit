@@ -17,7 +17,7 @@ sitemap: false
   <a href="{{ '/' | relative_url }}">Übersicht</a> <span aria-hidden="true">/</span> Lehrperson
 </nav>
 
-<div class="prose">
+<div class="prose" markdown="1">
 
 # Bereich für die Lehrperson
 

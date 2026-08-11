@@ -42,7 +42,7 @@ Geben Sie in Ihrer Präsentation an, woher Ihre Zahlen und Ihr Beispiel stammen.
 Formulieren Sie **2–3 Prüfungsfragen inkl. Musterantwort** zu Ihrem Cluster. Stellen Sie sich vor: Was sollte man nach Ihrer Präsentation unbedingt beantworten können?
 
 - Die Fragen werden im Peer-Check von einer anderen Gruppe getestet
-- Eine Auswahl aller eingereichten Fragen bildet später den Abschlusstest (auf exam.net)
+- Eine Auswahl der eingereichten Fragen kann später in die Prüfung einfliessen (auf exam.net)
 
 ## Format
 

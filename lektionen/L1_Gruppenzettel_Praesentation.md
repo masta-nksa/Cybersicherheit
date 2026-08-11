@@ -39,6 +39,6 @@ reihenfolge: 2
 2. **Gefährlichkeit** – für Privatpersonen vs. Unternehmen
 3. **Schutzmassnahmen** – konkret und alltagstauglich
 4. **Ein reales Beispiel** – idealerweise ein Fall aus der Schweiz
-5. **2–3 Prüfungsfragen** zu Ihrem Cluster inkl. Musterantwort – diese werden für eine abschliessende Bewertung verwendet
+5. **2–3 Prüfungsfragen** zu Ihrem Cluster inkl. Musterantwort – diese können in die Prüfung einfliessen
 
 *(Die genaue Aufgabenstellung inkl. Rechercheauftrag erhalten Sie ausführlich in L4.)*
