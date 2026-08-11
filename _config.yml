@@ -21,6 +21,11 @@ url: ""
 schule: "Neue Kantonsschule Aarau"
 fach: "Informatik, 2. Kanti"
 
+# Kein Theme: Layouts und CSS liegen vollständig in diesem Repo. GitHub Pages
+# würde sonst das Standard-Theme "primer" laden, dessen Stylesheet den Pfad
+# assets/css/style.css belegt – darum heisst unseres unterricht.css.
+theme:
+
 markdown: kramdown
 kramdown:
   input: GFM              # aktiviert u. a. Task-Listen  - [ ] / - [x]

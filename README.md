@@ -13,7 +13,7 @@ Die Website wird von GitHub Pages direkt aus diesem Repository mit Jekyll gebaut
 ├── lektionen/             alle Arbeitsblätter, Musterlösungen und Ablaufpläne
 ├── Cybersicherheit_Konzept_5_Lektionen.md   didaktisches Gesamtkonzept
 ├── _layouts/              HTML-Gerüst (default / startseite / lektion / material)
-└── assets/css/style.css   Gestaltung inkl. Dark Mode und Druckansicht
+└── assets/css/unterricht.css   Gestaltung inkl. Dark Mode und Druckansicht
 ```
 
 ## Inhalte bearbeiten
