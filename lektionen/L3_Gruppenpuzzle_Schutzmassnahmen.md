@@ -13,7 +13,7 @@ reihenfolge: 2
 
 ## So funktioniert's
 
-Ihre Gruppe erhält **eines** der sechs Pakete unten. Recherchieren Sie mithilfe von **oinf.ch – Schutzmassnahmen** (Link im Kurs-Ordner) sowie bei Bedarf einer eigenen Recherche die Antworten zu den Leitfragen. Bereiten Sie anschliessend eine **1–2-minütige Kurzvorstellung** für die Klasse vor: ein Kernsatz pro Massnahme plus ein Alltagsbeispiel reichen völlig.
+Ihre Gruppe erhält **eines** der sechs Pakete unten. Recherchieren Sie mithilfe von <a href="https://oinf.ch/kurs/informationsgesellschaft/schutzmassnahmen/" target="_blank" rel="noopener"><strong>oinf.ch – Schutzmassnahmen</strong></a> sowie bei Bedarf einer eigenen Recherche die Antworten zu den Leitfragen. Bereiten Sie anschliessend eine **1–2-minütige Kurzvorstellung** für die Klasse vor: ein Kernsatz pro Massnahme plus ein Alltagsbeispiel reichen völlig.
 
 ---
 

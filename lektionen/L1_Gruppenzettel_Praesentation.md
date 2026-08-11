@@ -17,7 +17,6 @@ reihenfolge: 2
 - Ihre Gruppe erhält eines von 9 Themenclustern (Zuteilung durch die Lehrperson, per Zufall)
 - In L5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 4 Min.)
 - Die Hauptvorbereitungszeit erhalten Sie in L4 (ganze Lektion); achten Sie aber schon in L2 (Cybertime) und L3 (Schutzmassnahmen) auf Bezüge zu Ihrem Thema
-- **Die Präsentation wird nicht benotet**
 - Sie erhalten für Ihre Gruppe einen privaten Teams-Kanal – legen Sie dort alle Unterlagen (Präsentation, Prüfungsfragen) ab
 
 ## Die 9 Themencluster
