@@ -25,7 +25,6 @@ permalink: /konzept.html
 - Theoriebasis: die drei oinf.ch-Seiten (Schadprogramme, Virenschutz/Firewall, Schutzmassnahmen) plus punktuelle Aktualisierungen (siehe Abschnitt 6)
 - Klassengrösse: in der Regel 20–25 SuS, tendenziell eher an der oberen Grenze → Präsentationsgruppen max. 3 Personen (mind. 9 Gruppen), Gruppen bei Puzzle-Aufgaben im Unterricht (z. B. L3) dürfen grösser sein
 - SuS arbeiten am eigenen Laptop (BYOD) – kein zusätzlicher Geräte-Support für L2 nötig
-- Kurzpräsentationen werden nicht benotet (rein formativ)
 - Cybertime lässt sich ohne Registrierung/Anmeldung direkt im Browser starten – die HubSpot-Tracking-Parameter im vorliegenden Link sind für den Einsatz unproblematisch
 - Jede Präsentationsgruppe erhält von Ihnen einen privaten Teams-Kanal zur Ablage ihrer Unterlagen (Präsentation, Prüfungsfragen)
 

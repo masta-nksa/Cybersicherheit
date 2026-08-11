@@ -17,7 +17,7 @@ Enthält (siehe Gruppenzettel aus L1): ______________________________
 
 ## Ziel
 
-Sie werden zu Expertinnen und Experten für Ihr Cluster und vermitteln der Klasse in L5 kompakt und lebensnah, was man darüber wissen sollte. Die Präsentation wird **nicht benotet** – Ihre Prüfungsfragen (Teil 5) fliessen aber in den Abschlusstest ein.
+Sie werden zu Expertinnen und Experten für Ihr Cluster und vermitteln der Klasse in L5 kompakt und lebensnah, was man darüber wissen sollte. Ihre Prüfungsfragen (Teil 5) können in die Prüfung einfliessen.
 
 ## Ihr Auftrag umfasst 5 Teile
 
