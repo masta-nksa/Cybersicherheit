@@ -30,7 +30,7 @@ reihenfolge: 1
 - **Kurzinput:** Die Analogie zum Kurzinput aus L1 (Virus-Wirt-Prinzip) kurz aufgreifen, dann auf Signaturen/Hash-Werte überleiten. Wer möchte, kann anschliessend das SHA-256-Tool (Link im Kurzinput-Text) kurz selbst ausprobieren.
 - **Während des Puzzles:** Lehrperson zirkuliert aktiv, v. a. bei den Paketen mit Aktualisierungs-Zusatzfrage (C und D) – hier lohnt sich ein kurzer Blick, ob die SuS die neuen Aspekte (Quishing, 2FA) korrekt einordnen.
 - **Kurzvorstellung strikt timen** (z. B. Handy-Timer sichtbar) – bei 6 Gruppen à 1–2 Min. bleibt sonst kein Puffer für die Take-Aways.
-- **Nach der Lektion:** Musterlösung (`L3_Musterloesung_Schutzmassnahmen.md`) an die ganze Klasse verteilen – sie deckt alle 11 Punkte ab, nicht nur das eigene Paket, und dient gleichzeitig als Lösung für Absenzen.
+- **Nach der Lektion:** Musterlösung (Link unter `/lsg/`) an die ganze Klasse verteilen – sie deckt alle 11 Punkte ab, nicht nur das eigene Paket, und dient gleichzeitig als Lösung für Absenzen.
 
 ## Take-Aways – Beispielaufgabe (Zuordnung)
 
@@ -40,9 +40,9 @@ Ordnen Sie folgenden Situationen aus Cybertime je eine passende Schutzmassnahme 
 2. „Sie verbinden sich am Bahnhof mit einem WLAN namens ‚Free_Public_WiFi'."
 3. „Jemand ruft an, gibt sich als IT-Support aus und will Ihr Passwort wissen."
 
-*(Musterantworten siehe `L3_Musterloesung_Schutzmassnahmen.md`)*
+*(Musterantworten siehe [Musterlösung: Schutzmassnahmen](../lsg/L3_Musterloesung_Schutzmassnahmen.html))*
 
 ## Material dieser Lektion
 - `L3_Kurzinput_Virenschutz-Firewall.md` – Grundlage für den Plenumsinput, kann auch als Handout dienen
 - `L3_Gruppenpuzzle_Schutzmassnahmen.md` – die 6 Pakete, ausgedruckt/aufgeteilt an die Gruppen
-- `L3_Musterloesung_Schutzmassnahmen.md` – nach der Lektion an alle SuS, zusätzlich für Absenzen
+- Musterlösung: liegt unter `/lsg/` – nach der Lektion an alle SuS, zusätzlich für Absenzen

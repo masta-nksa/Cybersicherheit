@@ -9,12 +9,28 @@ Die Website wird von GitHub Pages direkt aus diesem Repository mit Jekyll gebaut
 ```
 ├── _config.yml            Konfiguration (Titel, baseurl, Badge-Beschriftungen)
 ├── index.md               Startseite
-├── lektion-1.md … -5.md   je eine Lektionsseite (nur Metadaten + kurzer Einleitungstext)
-├── lektionen/             alle Arbeitsblätter, Musterlösungen und Ablaufpläne
+├── lektion-1.md … -5.md   Lektionsseiten: Metadaten + Ablauf als Aufträge für die SuS
+├── lektionen/             Arbeitsblätter (SuS) und Ablaufpläne (Lehrperson)
+├── lsg/                   Musterlösungen  →  /lsg/
+├── lp.md                  Bereich für die Lehrperson  →  /LP/
 ├── Cybersicherheit_Konzept_5_Lektionen.md   didaktisches Gesamtkonzept
 ├── _layouts/              HTML-Gerüst (default / startseite / lektion / material)
 └── assets/css/unterricht.css   Gestaltung inkl. Dark Mode und Druckansicht
 ```
+
+## Wer sieht was
+
+| Adresse | Inhalt | verlinkt von |
+|---|---|---|
+| `/` und `/lektion-N.html` | Ablauf und Unterlagen für die SuS | Navigation |
+| `/lsg/` | alle Musterlösungen | nirgends – Link selbst weitergeben |
+| `/LP/` | Konzept, Ablaufpläne, Gesamtstruktur | nirgends – Lesezeichen setzen |
+
+`/lsg/` und `/LP/` sind öffentlich erreichbar, aber weder verlinkt noch für
+Suchmaschinen freigegeben (`noindex` + kein Eintrag in der `sitemap.xml`). Beides
+steht als `noindex: true` / `sitemap: false` im Frontmatter bzw. in den `defaults`
+von `_config.yml`. **Achtung:** GitHub Pages unterscheidet Gross- und Kleinschreibung –
+`/LP/` funktioniert, `/lp/` nicht.
 
 ## Inhalte bearbeiten
 
@@ -35,9 +51,17 @@ reihenfolge: 2          # Sortierung innerhalb des Bereichs
 ---
 ```
 
-**Neues Material hinzufügen:** Datei in `lektionen/` anlegen, obigen Block anpassen,
-committen – sie erscheint automatisch an der richtigen Stelle. Es muss kein HTML und
-keine Navigation angefasst werden.
+Für `zielgruppe` gilt: `sus` erscheint auf der Lektionsseite, `lehrperson` nur unter
+`/LP/`. Musterlösungen brauchen kein `zielgruppe` – dafür genügt es, die Datei in
+`lsg/` abzulegen, den Rest setzen die `defaults` in `_config.yml`.
+
+**Neues Material hinzufügen:** Datei in `lektionen/` (bzw. `lsg/`) anlegen, obigen
+Block anpassen, committen – sie erscheint automatisch an der richtigen Stelle. Es muss
+kein HTML und keine Navigation angefasst werden.
+
+**Ablauf einer Lektion ändern:** Der Ablauf steht als nummerierte Liste im Textteil von
+`lektion-N.md` – die Nummerierung und die Zeitangaben (`*(ca. 15 Min.)*`) werden
+automatisch formatiert.
 
 ## Lokale Vorschau (optional)
 

@@ -2,13 +2,10 @@
 layout: default
 ---
 {%- assign lektionen = site.pages | where: "layout", "lektion" | sort: "lektion" -%}
-{%- assign konzept = site.pages | where: "typ", "konzept" | first -%}
 
 <div class="hero">
   <div class="wrap">
-    <p class="eyebrow">{{ site.fach }}</p>
     <h1>{{ site.title }}</h1>
-    <p class="hero-sub">{{ site.untertitel }}</p>
     <div class="prose hero-text">
       {{ content }}
     </div>
@@ -17,52 +14,20 @@ layout: default
 
 <div class="wrap">
 
-  <h2 class="section-title">Die fünf Lektionen</h2>
+  <h2 class="section-title">Lektionen</h2>
   <ol class="lektion-list">
     {%- for l in lektionen %}
-    {%- assign material = site.pages | where: "typ", "material" | where: "lektion", l.lektion -%}
-    {%- assign anzahl_sus = material | where: "zielgruppe", "sus" | size -%}
     <li>
       <a href="{{ l.url | relative_url }}">
-        <span class="lektion-nr">L{{ l.lektion }}</span>
+        <span class="lektion-nr">{{ l.lektion }}</span>
         <span class="lektion-body">
           <strong>{{ l.titel }}</strong>
           <span class="lektion-kurz">{{ l.kurz }}</span>
-          <span class="lektion-meta">{{ l.methode }} · {{ anzahl_sus }} Unterlagen für die SuS</span>
         </span>
         <span class="lektion-pfeil" aria-hidden="true">&rarr;</span>
       </a>
     </li>
     {%- endfor %}
   </ol>
-
-  <section class="quicklinks">
-    <h2 class="section-title">Schnellzugriff</h2>
-    <div class="quick-grid">
-      <div class="quick-col">
-        <h3>Eine Lektion verpasst?</h3>
-        <p>Zu allen zentralen Aufträgen gibt es eine Musterlösung bzw. Zusammenfassung – damit lässt sich der Stoff eigenständig nachholen.</p>
-        <ul class="link-list">
-          {%- assign loesungen = site.pages | where: "art", "musterloesung" | sort: "lektion" %}
-          {%- for m in loesungen %}
-          <li><a href="{{ m.url | relative_url }}"><span class="mini-nr">L{{ m.lektion }}</span> {{ m.titel }}</a></li>
-          {%- endfor %}
-        </ul>
-      </div>
-      <div class="quick-col">
-        <h3>Für die Lehrperson</h3>
-        <p>Ablaufpläne aller Lektionen und das didaktische Gesamtkonzept der Einheit.</p>
-        <ul class="link-list">
-          {%- if konzept %}
-          <li><a href="{{ konzept.url | relative_url }}"><span class="mini-nr">&#9733;</span> {{ konzept.titel }}</a></li>
-          {%- endif %}
-          {%- assign plaene = site.pages | where: "art", "ablaufplan" | sort: "lektion" %}
-          {%- for m in plaene %}
-          <li><a href="{{ m.url | relative_url }}"><span class="mini-nr">L{{ m.lektion }}</span> {{ m.titel }}</a></li>
-          {%- endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
 
 </div>

@@ -198,12 +198,40 @@ a { color: var(--accent); }
 }
 .block-icon { font-size: 1.1rem; }
 .block-hint { margin: 0 0 1.1rem; color: var(--text-muted); font-size: .9rem; }
+.block-ablauf { border-left: 4px solid var(--accent); }
+.block-ablauf h2 { color: var(--accent); }
 .block-lehrperson { border-left: 4px solid var(--lp); }
 .block-lehrperson h2 { color: var(--lp); }
 .block-sus { border-left: 4px solid var(--sus); }
 .block-sus h2 { color: var(--sus); }
 
+/* Ablauf einer Lektion: nummerierte Schritte mit Richtzeit */
+.ablauf { max-width: none; }
+.ablauf > *:last-child { margin-bottom: 0; }
+.ablauf ol { list-style: none; counter-reset: schritt; margin: 0 0 1rem; padding: 0; }
+.ablauf ol > li {
+  counter-increment: schritt; position: relative;
+  padding-left: 2.6rem; margin-bottom: .85rem;
+}
+.ablauf ol > li::before {
+  content: counter(schritt); position: absolute; left: 0; top: .1rem;
+  width: 1.8rem; height: 1.8rem; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+  font-size: .85rem; font-weight: 700;
+}
+.ablauf ol > li em {
+  font-style: normal; font-size: .85em; font-weight: 600;
+  color: var(--text-muted); white-space: nowrap;
+}
+
 .card-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+.card-list-breit { grid-template-columns: 1fr; margin-bottom: 1.4rem; }
+.card code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: .9em; padding: .1em .35em;
+  background: var(--accent-soft); border-radius: 4px;
+}
 .card a {
   display: flex; flex-direction: column; gap: .3rem; height: 100%;
   padding: .95rem 1rem; text-decoration: none; color: inherit;

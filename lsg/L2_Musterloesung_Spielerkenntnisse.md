@@ -1,7 +1,5 @@
 ---
 lektion: 2
-zielgruppe: sus
-art: musterloesung
 titel: "Zusammenfassung: Spielerkenntnisse"
 kurz: "Die wichtigsten Angriffstechniken aus dem Spiel – auch ohne Mitspielen nachvollziehbar"
 reihenfolge: 3

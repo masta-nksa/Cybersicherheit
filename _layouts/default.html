@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.titel %}{{ page.titel }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.kurz | default: site.description | strip_html }}">
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/css/unterricht.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128274;</text></svg>">
 </head>
@@ -23,7 +26,7 @@
       </a>
       <nav class="site-nav" aria-label="Lektionen">
         {%- for l in lektionen %}
-        <a href="{{ l.url | relative_url }}"{% if page.url == l.url %} aria-current="page"{% endif %} title="{{ l.titel }}">L{{ l.lektion }}</a>
+        <a href="{{ l.url | relative_url }}"{% if page.url == l.url %} aria-current="page"{% endif %} title="{{ l.titel }}">{{ l.lektion }}</a>
         {%- endfor %}
       </nav>
     </div>
@@ -35,7 +38,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>{{ site.title }} – {{ site.untertitel }} · {{ site.fach }}, {{ site.schule }}</p>
+      <p>{{ site.title }} – {{ site.untertitel }} · {{ site.schule }}</p>
       <p class="footer-meta">Inhalte werden als Markdown gepflegt · zuletzt gebaut am {{ site.time | date: "%d.%m.%Y" }}</p>
     </div>
   </footer>

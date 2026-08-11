@@ -40,4 +40,4 @@ Die SuS übernehmen die Rolle einer hackenden Person, die das fiktive Unternehme
 ## Material dieser Lektion
 - `L2_Glossar_Cybertime-Begriffe.md` – wird an SuS abgegeben (Nachschlagehilfe während des Spiels)
 - `L2_Beobachtungsauftrag_und_Reflexion.md` – wird an SuS abgegeben
-- `L2_Musterloesung_Spielerkenntnisse.md` – nur für Lehrperson / wird Absenten zugänglich gemacht
+- Zusammenfassung der Spielerkenntnisse: liegt unter `/lsg/` – nicht auf den SuS-Seiten verlinkt, Link nach Bedarf weitergeben

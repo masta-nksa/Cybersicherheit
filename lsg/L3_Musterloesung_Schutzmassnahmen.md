@@ -1,7 +1,5 @@
 ---
 lektion: 3
-zielgruppe: sus
-art: musterloesung
 titel: "Musterlösung: Schutzmassnahmen"
 kurz: "Alle sechs Pakete auf einen Blick – nicht nur das eigene"
 reihenfolge: 3

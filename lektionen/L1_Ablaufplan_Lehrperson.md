@@ -43,11 +43,11 @@ reihenfolge: 1
 2. Was macht Ransomware mit den Daten der Betroffenen?
 3. Wieso passt die Analogie zu biologischen Viren auf Computerviren?
 
-*(Musterantworten siehe `L1_Musterloesung_Malware-Steckbriefe.md`)*
+*(Musterantworten siehe [Musterlösung: Malware-Steckbriefe](../lsg/L1_Musterloesung_Malware-Steckbriefe.html))*
 
 ---
 
 ## Materialübersicht dieser Lektion
 - `L1_Arbeitsblatt_Malware-Steckbriefe.md` – wird an SuS abgegeben
 - `L1_Gruppenzettel_Praesentation.md` – wird an SuS abgegeben
-- `L1_Musterloesung_Malware-Steckbriefe.md` – nur für Lehrperson / wird Absenten zugänglich gemacht
+- Musterlösung: liegt unter `/lsg/` – nicht auf den SuS-Seiten verlinkt, Link nach Bedarf weitergeben

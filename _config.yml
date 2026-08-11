@@ -4,8 +4,8 @@
 # ---------------------------------------------------------------------------
 
 title: "Cybersicherheit"
-untertitel: "Unterrichtseinheit in 5 Lektionen"
-description: "Materialien zur Unterrichtseinheit Cybersicherheit (2. Kanti, Informatik) – Arbeitsblätter, Musterlösungen und Ablaufpläne."
+untertitel: "Angriffe erkennen, sich schützen"
+description: "Unterrichtsmaterialien zum Thema Cybersicherheit – Arbeitsblätter, Glossar und Aufträge."
 lang: "de-CH"
 
 # WICHTIG ------------------------------------------------------------------
@@ -19,7 +19,6 @@ url: ""
 
 # Fusszeile
 schule: "Neue Kantonsschule Aarau"
-fach: "Informatik, 2. Kanti"
 
 # Kein Theme: Layouts und CSS liegen vollständig in diesem Repo. GitHub Pages
 # würde sonst das Standard-Theme "primer" laden, dessen Stylesheet den Pfad
@@ -55,6 +54,19 @@ defaults:
     values:
       layout: "material"
       typ: "material"
+  # Musterlösungen liegen unter /lsg/ – sie werden nirgends von den SuS-Seiten aus
+  # verlinkt (die Lehrperson gibt den Link weiter) und bleiben aus Suchmaschinen
+  # heraus: noindex + kein Eintrag in der sitemap.xml.
+  - scope:
+      path: "lsg"
+      type: "pages"
+    values:
+      layout: "material"
+      typ: "material"
+      zielgruppe: "loesung"
+      art: "musterloesung"
+      noindex: true
+      sitemap: false
 
 exclude:
   - Gemfile
