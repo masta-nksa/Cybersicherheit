@@ -126,7 +126,7 @@ Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte A
 1. Beschreibung – was ist das, wie funktioniert es?
 2. Gefährlichkeit – für Privatpersonen vs. Unternehmen
 3. Schutzmassnahmen – konkret und alltagstauglich
-4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über Halbjahresberichte des Bundesamts für Cybersicherheit BACS recherchierbar)
+4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über die [Halbjahresberichte des Bundesamts für Cybersicherheit BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html) recherchierbar)
 5. 2–3 Prüfungsfragen inkl. Musterantwort zum eigenen Cluster
 
 **Zur Verwendung der Prüfungsfragen:** Die Präsentation selbst bleibt unbenotet, die Fragen fliessen aber in eine abschliessende Bewertung ein. Sie sichten/kuratieren die eingereichten Fragen nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 9 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
@@ -141,11 +141,11 @@ Format bewusst offen (Slides, Plakat, kurzer Skit/Rollenspiel) – fördert Prax
 
 Die oinf.ch-Grundlagen sind inhaltlich weiterhin solide, folgende Ergänzungen erhöhen die Aktualität:
 - **2-Faktor-Authentifizierung / Passkeys** als Ergänzung zu «gute Passwörter» (damals nur Passwort-Hygiene)
-- **KI-gestützte Angriffe:** Laut Bundesamt für Cybersicherheit (BACS) werden Phishing-Nachrichten zunehmend gezielter und überzeugender, teils mit KI erstellt
+- **KI-gestützte Angriffe:** Laut Bundesamt für Cybersicherheit (BACS) werden Phishing-Nachrichten zunehmend gezielter und überzeugender, teils mit KI erstellt ([Halbjahresberichte des BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html))
 - **Quishing** (QR-Code-Phishing) als neue Variante neben Mail/SMS/Anruf
-- **SMS-Blaster:** Seit Sommer 2025 auch in der Schweiz beobachtet – umgehen Filter der Telekom-Anbieter
+- **SMS-Blaster:** Seit Sommer 2025 auch in der Schweiz beobachtet – umgehen Filter der Telekom-Anbieter ([BACS, Halbjahresbericht 2025/2](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte/halbjahresbericht-2025-2.html))
 - **Real-Time- und Double-Phishing:** Gefälschte Bezahl-Werbeanzeigen in Suchmaschinen, die auf Fake-E-Banking-Seiten führen; zweistufige Betrugsmaschen per Telefon-Nachfassen
-- **Meldepflicht kritischer Infrastrukturen** seit 1.4.2025 gegenüber dem BACS – als Beispiel, dass Cybersicherheit auch politisch/gesetzlich zunehmend reguliert wird
+- **Meldepflicht kritischer Infrastrukturen** seit 1.4.2025 gegenüber dem BACS – als Beispiel, dass Cybersicherheit auch politisch/gesetzlich zunehmend reguliert wird ([Informationen zur Meldepflicht, BACS](https://www.ncsc.admin.ch/ncsc/de/home/meldepflicht/meldepflicht-info.html))
 
 Diese Punkte eignen sich gut zur Integration in die Schutzmassnahmen-Pakete in L3 und als Rechercheanstoss für Cluster 9.
 

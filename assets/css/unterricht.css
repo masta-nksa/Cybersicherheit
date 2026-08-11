@@ -205,6 +205,16 @@ a { color: var(--accent); }
 .block-sus { border-left: 4px solid var(--sus); }
 .block-sus h2 { color: var(--sus); }
 
+/* Quellenangabe unter einem Text */
+.quellen {
+  margin-top: 1.6rem; padding-top: .9rem;
+  border-top: 1px solid var(--border);
+  font-size: .82rem; line-height: 1.7; color: var(--text-muted);
+}
+.quellen strong { color: var(--text-muted); font-weight: 650; }
+.quellen a { color: var(--text-muted); text-decoration-color: var(--border-strong); }
+.quellen a:hover { color: var(--accent); }
+
 /* Ablauf einer Lektion: nummerierte Schritte mit Richtzeit */
 .ablauf { max-width: none; }
 .ablauf > *:last-child { margin-bottom: 0; }
