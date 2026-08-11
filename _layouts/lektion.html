@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{%- assign material   = site.pages | where: "typ", "material" | where: "lektion", page.lektion | sort: "reihenfolge" -%}
+{%- assign fuer_lp    = material | where: "zielgruppe", "lehrperson" -%}
+{%- assign fuer_sus   = material | where: "zielgruppe", "sus" -%}
+{%- assign lektionen  = site.pages | where: "layout", "lektion" | sort: "lektion" -%}
+
+<div class="wrap">
+
+  <nav class="breadcrumb" aria-label="Sie sind hier">
+    <a href="{{ '/' | relative_url }}">Übersicht</a> <span aria-hidden="true">/</span> Lektion {{ page.lektion }}
+  </nav>
+
+  <header class="lektion-header">
+    <p class="eyebrow">Lektion {{ page.lektion }} von 5</p>
+    <h1>{{ page.titel }}</h1>
+    <p class="lead">{{ page.kurz }}</p>
+    <ul class="fact-list">
+      <li><span>Dauer</span> 45 Minuten</li>
+      {%- if page.methode %}<li><span>Methode</span> {{ page.methode }}</li>{% endif %}
+      {%- if page.output %}<li><span>Output</span> {{ page.output }}</li>{% endif %}
+    </ul>
+  </header>
+
+  {%- if content != "" %}
+  <div class="prose lektion-intro">
+    {{ content }}
+  </div>
+  {%- endif %}
+
+  <section class="material-block block-lehrperson">
+    <h2><span class="block-icon" aria-hidden="true">&#128218;</span> Für die Lehrperson</h2>
+    <p class="block-hint">Vorbereitung und Durchführung – nicht für die Abgabe an die Klasse gedacht.</p>
+    <ul class="card-list">
+      {%- for m in fuer_lp %}
+      <li class="card">
+        <a href="{{ m.url | relative_url }}">
+          <span class="badge badge-{{ m.art }}">{{ site.art_labels[m.art] }}</span>
+          <strong>{{ m.titel }}</strong>
+          <span class="card-kurz">{{ m.kurz }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="material-block block-sus">
+    <h2><span class="block-icon" aria-hidden="true">&#9997;</span> Für die SuS</h2>
+    <p class="block-hint">Arbeitsblätter und Unterlagen dieser Lektion – inklusive Musterlösungen zum Nachholen.</p>
+    <ul class="card-list">
+      {%- for m in fuer_sus %}
+      <li class="card">
+        <a href="{{ m.url | relative_url }}">
+          <span class="badge badge-{{ m.art }}">{{ site.art_labels[m.art] }}</span>
+          <strong>{{ m.titel }}</strong>
+          <span class="card-kurz">{{ m.kurz }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  {%- assign nr_prev = page.lektion | minus: 1 -%}
+  {%- assign nr_next = page.lektion | plus: 1 -%}
+  {%- assign vorige  = lektionen | where: "lektion", nr_prev | first -%}
+  {%- assign naechste = lektionen | where: "lektion", nr_next | first -%}
+  <nav class="pager" aria-label="Weitere Lektionen">
+    {%- if vorige %}
+    <a class="pager-prev" href="{{ vorige.url | relative_url }}"><span>&larr; Lektion {{ vorige.lektion }}</span>{{ vorige.titel }}</a>
+    {%- endif %}
+    {%- if naechste %}
+    <a class="pager-next" href="{{ naechste.url | relative_url }}"><span>Lektion {{ naechste.lektion }} &rarr;</span>{{ naechste.titel }}</a>
+    {%- endif %}
+  </nav>
+
+</div>
