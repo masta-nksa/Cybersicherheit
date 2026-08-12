@@ -5,7 +5,63 @@
 /* ==========================================================================
    Cybersicherheit – Unterrichtsmaterialien
    Layout, Typografie, Dark Mode und Druckansicht
+
+   AUFBAU
+   1. Schriften (@font-face, lokal im Repo)
+   2. Gestaltungsvariablen – Standarddesign
+   3. Wählbare Designs (data-thema am <html>)
+   4. Grundgerüst, Kopfzeile, Startseite, Lektionen, Material, Fliesstext
+   5. Design-spezifische Feinheiten
+   6. Druckansicht
+
+   EIN DESIGN ÄNDERN ODER ERGÄNZEN
+   Ein Design ist nichts weiter als ein Variablenblock in Abschnitt 3. Wer ein
+   viertes hinzufügen will, kopiert einen Block, vergibt einen neuen Namen und
+   trägt ihn in _layouts/default.html in die Auswahlliste ein.
    ========================================================================== */
+
+/* --- 1. Schriften -------------------------------------------------------- */
+/* Die Dateien liegen im Repo (keine Anfrage an Google o. ä., siehe
+   assets/fonts/LIZENZ.md). Der Browser lädt eine Schrift erst, wenn ein Design
+   sie wirklich benutzt – das Standarddesign kommt ohne Download aus. */
+
+@font-face {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/inter-latin-wght-normal.woff2' | relative_url }}") format("woff2-variations");
+}
+@font-face {
+  font-family: "Source Serif 4 var";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/source-serif-4-latin-wght-normal.woff2' | relative_url }}") format("woff2-variations");
+}
+@font-face {
+  font-family: "Source Serif 4 var";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/source-serif-4-latin-wght-italic.woff2' | relative_url }}") format("woff2-variations");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/ibm-plex-mono-latin-400-normal.woff2' | relative_url }}") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/ibm-plex-mono-latin-500-normal.woff2' | relative_url }}") format("woff2");
+}
+
+/* --- 2. Gestaltungsvariablen – Standarddesign ---------------------------- */
 
 :root {
   --bg:            #f7f8fa;
@@ -20,10 +76,41 @@
   --lp-soft:       #fdf5e6;
   --sus:           #1f6a55;
   --sus-soft:      #eaf7f2;
-  --radius:        10px;
-  --shadow:        0 1px 2px rgba(20, 25, 45, .06), 0 4px 14px rgba(20, 25, 45, .05);
-  --wrap:          min(64rem, 100% - 2.5rem);
-  --wrap-narrow:   min(50rem, 100% - 2.5rem);
+
+  --font-body: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-head: var(--font-body);
+  --font-meta: var(--font-body);
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --head-weight:   700;
+  --label-transform: uppercase;
+  --label-tracking:  .04em;
+
+  /* Laufweite der Überschriften, von gross nach klein. Die Werte entsprechen
+     exakt dem bisherigen Stylesheet – ein Design kann sie geschlossen
+     verändern (Serifen mögen keine negative Laufweite). */
+  --tr-hero: -.025em;   /* Titel der Startseite */
+  --tr-h1:   -.02em;    /* Seitentitel */
+  --tr-h2:   -.015em;   /* Abschnittstitel im Fliesstext */
+  --tr-h3:   -.01em;    /* Zwischentitel, Kartentitel, Wortmarke */
+  --tr-h4:   -.005em;   /* Kacheltitel */
+
+  /* Eckenradien, ebenfalls unverändert übernommen. */
+  --radius-karte:  10px;   /* Karten, Blöcke, Pager */
+  --radius-feld:    9px;   /* Kacheln, Lektionsnummer */
+  --radius-block:   8px;   /* Hinweis, Codeblock, Tabelle */
+  --radius-knopf:   7px;   /* Navigation, Schaltflächen */
+  --radius-marke:   5px;   /* Badges, Mini-Nummer */
+  --radius-code:    4px;   /* Inline-Code, Kontrollkästchen */
+  --radius-pill:   99px;   /* Faktenliste */
+  --shadow:      0 1px 2px rgba(20, 25, 45, .06), 0 4px 14px rgba(20, 25, 45, .05);
+
+  --hero-bg:      linear-gradient(180deg, var(--accent-soft), transparent);
+  --header-bg:    color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  --header-filter: saturate(1.4) blur(8px);
+  --block-line:   4px;   /* farbige Kante links am Materialblock */
+
+  --wrap:        min(64rem, 100% - 2.5rem);
+  --wrap-narrow: min(50rem, 100% - 2.5rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +131,166 @@
   }
 }
 
+/* --- 3. Wählbare Designs ------------------------------------------------- */
+/* Die Auswahl sitzt als data-thema am <html>. Weil :root[data-thema] stärker
+   wiegt als :root allein, gewinnen diese Blöcke unabhängig von der Reihenfolge
+   – und der Dunkelblock eines Designs gewinnt über dessen Hellblock, weil er
+   später steht. Jedes Design setzt darum alle Farben in beiden Modi. */
+
+/* 3a. Raster – Schweizer Typografie: keine Karten, nur Linien und Schrift ---*/
+
+:root[data-thema="raster"] {
+  --bg:            #ffffff;
+  --bg-elev:       #ffffff;
+  --text:          #111318;
+  --text-muted:    #5c6270;
+  --border:        #d8dae0;
+  --border-strong: #a8adb8;
+  --accent:        #d0451b;
+  --accent-soft:   #fdf0ec;
+  --lp:            #7a5a1a;
+  --lp-soft:       #f8f2e6;
+  --sus:           #16624e;
+  --sus-soft:      #eaf3ef;
+
+  --font-body: "Inter var", "Segoe UI", system-ui, sans-serif;
+  --font-head: var(--font-body);
+  --font-meta: var(--font-body);
+  --head-weight:   600;
+  --tr-hero: -.035em; --tr-h1: -.03em; --tr-h2: -.02em; --tr-h3: -.015em; --tr-h4: -.01em;
+  --label-transform: uppercase;
+  --label-tracking:  .08em;
+
+  --radius-karte: 0; --radius-feld: 0; --radius-block: 0;
+  --radius-knopf: 0; --radius-marke: 0; --radius-code: 0; --radius-pill: 0;
+  --shadow: none;
+  --hero-bg: none;
+  --header-bg: var(--bg);
+  --header-filter: none;
+  --block-line: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-thema="raster"] {
+    --bg:            #101216;
+    --bg-elev:       #101216;
+    --text:          #e8eaee;
+    --text-muted:    #99a0ad;
+    --border:        #2a2e37;
+    --border-strong: #474d5a;
+    --accent:        #ff7a4d;
+    --accent-soft:   #2a1a13;
+    --lp:            #d9a95a;
+    --lp-soft:       #262015;
+    --sus:           #63c3a5;
+    --sus-soft:      #13241e;
+  }
+}
+
+/* 3b. Arbeitsheft – Papierton, Serifen-Überschriften, Monospace für Metadaten */
+
+:root[data-thema="heft"] {
+  --bg:            #faf7f2;
+  --bg-elev:       #fffdf9;
+  --text:          #23201c;
+  --text-muted:    #6b6459;
+  --border:        #e3dcd1;
+  --border-strong: #c4bcae;
+  --accent:        #9a4f2b;
+  --accent-soft:   #f4e9e2;
+  --lp:            #8a6a1f;
+  --lp-soft:       #f7f0dd;
+  --sus:           #2c6350;
+  --sus-soft:      #e7f0ea;
+
+  --font-body: "Inter var", "Segoe UI", system-ui, sans-serif;
+  --font-head: "Source Serif 4 var", Georgia, "Times New Roman", serif;
+  --font-meta: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --head-weight:   600;
+  --tr-hero: 0; --tr-h1: 0; --tr-h2: 0; --tr-h3: 0; --tr-h4: 0;
+  --label-transform: none;
+  --label-tracking:  .1em;
+
+  --radius-karte: 3px; --radius-feld: 3px; --radius-block: 3px;
+  --radius-knopf: 3px; --radius-marke: 2px; --radius-code: 2px; --radius-pill: 3px;
+  --shadow: none;
+  --hero-bg: none;
+  --header-bg: var(--bg);
+  --header-filter: none;
+  --block-line: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-thema="heft"] {
+    --bg:            #1c1a17;
+    --bg-elev:       #242119;
+    --text:          #ece7de;
+    --text-muted:    #a49b8d;
+    --border:        #36312a;
+    --border-strong: #4e473d;
+    --accent:        #d98b62;
+    --accent-soft:   #33251d;
+    --lp:            #d7b06a;
+    --lp-soft:       #2e2718;
+    --sus:           #7cc3a6;
+    --sus-soft:      #1b2b24;
+  }
+}
+
+/* 3c. Werkstatt – flach statt plastisch, Monospace für Navigation und Kürzel */
+
+:root[data-thema="werkstatt"] {
+  --bg:            #f6f6f4;
+  --bg-elev:       #ffffff;
+  --text:          #17191c;
+  --text-muted:    #5d6470;
+  --border:        #e0e1e4;
+  --border-strong: #bfc2c8;
+  --accent:        #8f3f66;
+  --accent-soft:   #f8ecf3;
+  --lp:            #8a5f14;
+  --lp-soft:       #fbf2e2;
+  --sus:           #1c6350;
+  --sus-soft:      #e6f2ee;
+
+  --font-body: "Inter var", "Segoe UI", system-ui, sans-serif;
+  --font-head: var(--font-body);
+  --font-meta: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --head-weight:   600;
+  --tr-hero: -.03em; --tr-h1: -.025em; --tr-h2: -.018em; --tr-h3: -.012em; --tr-h4: -.006em;
+  --label-transform: none;
+  --label-tracking:  .02em;
+
+  --radius-karte: 6px; --radius-feld: 5px; --radius-block: 5px;
+  --radius-knopf: 4px; --radius-marke: 3px; --radius-code: 3px; --radius-pill: 4px;
+  --shadow: none;
+  --hero-bg: none;
+  --header-bg: var(--bg);
+  --header-filter: none;
+  --block-line: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-thema="werkstatt"] {
+    --bg:            #14161a;
+    --bg-elev:       #1b1e23;
+    --text:          #e7e9ee;
+    --text-muted:    #969db0;
+    --border:        #2a2e36;
+    --border-strong: #434955;
+    --accent:        #e59ac0;
+    --accent-soft:   #2e1b26;
+    --lp:            #dfae5c;
+    --lp-soft:       #2a2215;
+    --sus:           #6cc9aa;
+    --sus-soft:      #13241e;
+  }
+}
+
+/* --- 4. Grundgerüst ------------------------------------------------------ */
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -52,11 +299,13 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4 { font-family: var(--font-head); font-weight: var(--head-weight); }
 
 a { color: var(--accent); }
 
@@ -75,49 +324,84 @@ a { color: var(--accent); }
 
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
-  backdrop-filter: saturate(1.4) blur(8px);
+  background: var(--header-bg);
+  backdrop-filter: var(--header-filter);
   border-bottom: 1px solid var(--border);
 }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
-  gap: 1rem; min-height: 4rem; padding-block: .55rem;
+  gap: 1rem; min-height: 4rem; padding-block: .55rem; flex-wrap: wrap;
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
 .brand-icon { font-size: 1.4rem; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
-.brand-text strong { font-size: 1.05rem; letter-spacing: -.01em; }
+.brand-text strong { font-family: var(--font-head); font-size: 1.05rem; letter-spacing: var(--tr-h3); }
 .brand-text small  { color: var(--text-muted); font-size: .78rem; }
+
+.header-tools { display: flex; align-items: center; gap: .8rem; margin-left: auto; }
 
 .site-nav { display: flex; gap: .3rem; }
 .site-nav a {
   display: inline-flex; align-items: center; justify-content: center;
   min-width: 2.4rem; height: 2.2rem; padding-inline: .5rem;
-  border-radius: 7px; font-size: .92rem; font-weight: 600;
+  border-radius: var(--radius-knopf); font-size: .92rem; font-weight: 600;
   text-decoration: none; color: var(--text-muted);
 }
 .site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
 .site-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
 
+/* Design-Auswahl. Ohne JavaScript bleibt sie über das hidden-Attribut
+   ausgeblendet – dann greift schlicht das Standarddesign. */
+.thema-wahl { display: flex; align-items: center; gap: .4rem; }
+.thema-wahl[hidden] { display: none; }
+.thema-wahl label { font-size: .78rem; color: var(--text-muted); }
+.thema-wahl select {
+  font: inherit; font-size: .85rem;
+  padding: .25rem 1.6rem .25rem .5rem; cursor: pointer;
+  color: var(--text); background: var(--bg-elev);
+  border: 1px solid var(--border-strong); border-radius: var(--radius-knopf);
+  appearance: none; -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: right 0.75rem center, right 0.5rem center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.thema-wahl select:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Auf dem Handy passen Wortmarke, Lektionsnummern und Auswahl nicht in eine
+   Zeile. Sie rücken darum auf eine zweite; die Beschriftung „Design" bleibt
+   für Screenreader erhalten, verschwindet aber aus dem Blickfeld. */
+@media (max-width: 30rem) {
+  .header-inner { gap: .4rem; }
+  .header-tools { width: 100%; margin-left: 0; justify-content: space-between; gap: .5rem; }
+  .site-nav a { min-width: 2.1rem; padding-inline: .35rem; }
+  .thema-wahl label {
+    position: absolute; width: 1px; height: 1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+}
+
 /* --- Startseite ---------------------------------------------------------- */
 
 .hero {
-  background: linear-gradient(180deg, var(--accent-soft), transparent);
+  background: var(--hero-bg);
   border-bottom: 1px solid var(--border);
   padding-block: 3rem 2.5rem;
   margin-bottom: 2.5rem;
 }
 .eyebrow {
-  margin: 0 0 .4rem; font-size: .78rem; font-weight: 700;
-  letter-spacing: .09em; text-transform: uppercase; color: var(--accent);
+  margin: 0 0 .4rem; font-family: var(--font-meta);
+  font-size: .78rem; font-weight: 700;
+  letter-spacing: .09em; text-transform: var(--label-transform); color: var(--accent);
 }
-.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 2.9rem); letter-spacing: -.025em; line-height: 1.1; }
+.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 2.9rem); letter-spacing: var(--tr-hero); line-height: 1.1; }
 .hero-sub { margin: .35rem 0 0; font-size: 1.15rem; color: var(--text-muted); }
 .hero-text { max-width: 46rem; margin-top: 1.4rem; }
 .hero-text p:last-child { margin-bottom: 0; }
 
 .section-title {
-  font-size: 1.25rem; letter-spacing: -.01em;
+  font-size: 1.25rem; letter-spacing: var(--tr-h3);
   margin: 2.8rem 0 1rem; padding-bottom: .5rem;
   border-bottom: 1px solid var(--border);
 }
@@ -127,18 +411,18 @@ a { color: var(--accent); }
   display: flex; align-items: center; gap: 1.1rem;
   padding: 1.05rem 1.2rem; text-decoration: none; color: inherit;
   background: var(--bg-elev); border: 1px solid var(--border);
-  border-radius: var(--radius); box-shadow: var(--shadow);
+  border-radius: var(--radius-karte); box-shadow: var(--shadow);
   transition: border-color .15s, transform .15s;
 }
 .lektion-list > li > a:hover { border-color: var(--accent); transform: translateY(-1px); }
 .lektion-nr {
-  flex: none; width: 2.9rem; height: 2.9rem; border-radius: 9px;
+  flex: none; width: 2.9rem; height: 2.9rem; border-radius: var(--radius-feld);
   display: grid; place-items: center;
   background: var(--accent-soft); color: var(--accent);
   font-weight: 700; font-size: 1rem;
 }
 .lektion-body { display: flex; flex-direction: column; gap: .12rem; min-width: 0; }
-.lektion-body strong { font-size: 1.05rem; letter-spacing: -.01em; }
+.lektion-body strong { font-size: 1.05rem; letter-spacing: var(--tr-h3); }
 .lektion-kurz { color: var(--text-muted); font-size: .93rem; }
 .lektion-meta { color: var(--text-muted); font-size: .8rem; opacity: .85; }
 .lektion-pfeil { margin-left: auto; color: var(--text-muted); font-size: 1.2rem; }
@@ -147,32 +431,32 @@ a { color: var(--accent); }
 .quick-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
 .quick-col {
   background: var(--bg-elev); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 1.3rem 1.4rem;
+  border-radius: var(--radius-karte); padding: 1.3rem 1.4rem;
 }
 .quick-col h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
 .quick-col > p { margin: 0 0 .9rem; color: var(--text-muted); font-size: .92rem; }
 .link-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
 .link-list a {
   display: flex; align-items: center; gap: .55rem;
-  padding: .4rem .5rem; border-radius: 7px;
+  padding: .4rem .5rem; border-radius: var(--radius-knopf);
   text-decoration: none; color: inherit; font-size: .94rem;
 }
 .link-list a:hover { background: var(--accent-soft); color: var(--accent); }
 .mini-nr {
   flex: none; display: grid; place-items: center;
-  width: 1.7rem; height: 1.7rem; border-radius: 5px;
+  width: 1.7rem; height: 1.7rem; border-radius: var(--radius-marke);
   background: var(--accent-soft); color: var(--accent);
   font-size: .74rem; font-weight: 700;
 }
 
 /* --- Lektionsseite ------------------------------------------------------- */
 
-.breadcrumb { margin: 1.6rem 0 1.2rem; font-size: .88rem; color: var(--text-muted); }
+.breadcrumb { margin: 1.6rem 0 1.2rem; font-family: var(--font-meta); font-size: .88rem; color: var(--text-muted); }
 .breadcrumb a { color: var(--text-muted); }
 .breadcrumb span { margin-inline: .4rem; opacity: .6; }
 
 .lektion-header { margin-bottom: 2rem; }
-.lektion-header h1 { margin: 0 0 .4rem; font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: -.02em; line-height: 1.15; }
+.lektion-header h1 { margin: 0 0 .4rem; font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: var(--tr-h1); line-height: 1.15; }
 .lead { margin: 0; font-size: 1.1rem; color: var(--text-muted); max-width: 46rem; }
 
 .fact-list {
@@ -181,28 +465,29 @@ a { color: var(--accent); }
 }
 .fact-list li {
   background: var(--bg-elev); border: 1px solid var(--border);
-  border-radius: 99px; padding: .3rem .85rem; font-size: .86rem;
+  border-radius: var(--radius-pill); padding: .3rem .85rem;
+  font-family: var(--font-meta); font-size: .86rem;
 }
 .fact-list li span { color: var(--text-muted); margin-right: .35rem; }
 
 .lektion-intro { margin-bottom: 2rem; }
 
 .material-block {
-  border: 1px solid var(--border); border-radius: var(--radius);
+  border: 1px solid var(--border); border-radius: var(--radius-karte);
   background: var(--bg-elev); padding: 1.4rem 1.5rem 1.5rem;
   margin-bottom: 1.4rem;
 }
 .material-block h2 {
   display: flex; align-items: center; gap: .55rem;
-  margin: 0 0 .25rem; font-size: 1.15rem; letter-spacing: -.01em;
+  margin: 0 0 .25rem; font-size: 1.15rem; letter-spacing: var(--tr-h3);
 }
 .block-icon { font-size: 1.1rem; }
 .block-hint { margin: 0 0 1.1rem; color: var(--text-muted); font-size: .9rem; }
-.block-ablauf { border-left: 4px solid var(--accent); }
+.block-ablauf { border-left: var(--block-line) solid var(--accent); }
 .block-ablauf h2 { color: var(--accent); }
-.block-lehrperson { border-left: 4px solid var(--lp); }
+.block-lehrperson { border-left: var(--block-line) solid var(--lp); }
 .block-lehrperson h2 { color: var(--lp); }
-.block-sus { border-left: 4px solid var(--sus); }
+.block-sus { border-left: var(--block-line) solid var(--sus); }
 .block-sus h2 { color: var(--sus); }
 
 /* Quellenangabe unter einem Text */
@@ -228,7 +513,7 @@ a { color: var(--accent); }
   width: 1.8rem; height: 1.8rem; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--accent-soft); color: var(--accent);
-  font-size: .85rem; font-weight: 700;
+  font-family: var(--font-meta); font-size: .85rem; font-weight: 700;
 }
 .ablauf ol > li em {
   font-style: normal; font-size: .85em; font-weight: 600;
@@ -238,18 +523,18 @@ a { color: var(--accent); }
 .card-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
 .card-list-breit { grid-template-columns: 1fr; margin-bottom: 1.4rem; }
 .card code {
-  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: .9em; padding: .1em .35em;
-  background: var(--accent-soft); border-radius: 4px;
+  background: var(--accent-soft); border-radius: var(--radius-code);
 }
 .card a {
   display: flex; flex-direction: column; gap: .3rem; height: 100%;
   padding: .95rem 1rem; text-decoration: none; color: inherit;
-  border: 1px solid var(--border); border-radius: 9px; background: var(--bg);
+  border: 1px solid var(--border); border-radius: var(--radius-feld); background: var(--bg);
   transition: border-color .15s, background .15s;
 }
 .card a:hover { border-color: var(--accent); background: var(--accent-soft); }
-.card strong { letter-spacing: -.005em; }
+.card strong { letter-spacing: var(--tr-h4); }
 .card-kurz { color: var(--text-muted); font-size: .87rem; line-height: 1.45; }
 
 /* --- Badges -------------------------------------------------------------- */
@@ -257,8 +542,9 @@ a { color: var(--accent); }
 .badge {
   align-self: flex-start;
   display: inline-block; padding: .1rem .5rem;
-  border-radius: 5px; font-size: .7rem; font-weight: 700;
-  letter-spacing: .04em; text-transform: uppercase;
+  border-radius: var(--radius-marke);
+  font-family: var(--font-meta); font-size: .7rem; font-weight: 700;
+  letter-spacing: var(--label-tracking); text-transform: var(--label-transform);
   background: var(--border); color: var(--text-muted);
 }
 .badge-arbeitsblatt  { background: #e3ecff; color: #24479c; }
@@ -294,12 +580,12 @@ a { color: var(--accent); }
   font: inherit; font-size: .85rem; font-weight: 600;
   padding: .35rem .9rem; cursor: pointer;
   background: var(--bg-elev); color: var(--text-muted);
-  border: 1px solid var(--border-strong); border-radius: 7px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-knopf);
 }
 .print-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .hinweis {
-  border-radius: 8px; padding: .8rem 1rem; margin: 0 0 1.6rem;
+  border-radius: var(--radius-block); padding: .8rem 1rem; margin: 0 0 1.6rem;
   font-size: .93rem; border: 1px solid var(--border);
 }
 .hinweis-loesung { background: var(--sus-soft); border-color: color-mix(in srgb, var(--sus) 35%, transparent); }
@@ -309,8 +595,8 @@ a { color: var(--accent); }
 
 .prose { max-width: 46rem; }
 .prose > *:first-child { margin-top: 0; }
-.prose h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); letter-spacing: -.02em; line-height: 1.2; margin: 0 0 1rem; }
-.prose h2 { font-size: 1.4rem; letter-spacing: -.015em; margin: 2.4rem 0 .8rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
+.prose h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); letter-spacing: var(--tr-h1); line-height: 1.2; margin: 0 0 1rem; }
+.prose h2 { font-size: 1.4rem; letter-spacing: var(--tr-h2); margin: 2.4rem 0 .8rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
 .prose h3 { font-size: 1.13rem; margin: 1.9rem 0 .6rem; }
 .prose h4 { font-size: 1rem; margin: 1.5rem 0 .5rem; color: var(--text-muted); }
 .prose p, .prose ul, .prose ol { margin: 0 0 1rem; }
@@ -325,13 +611,13 @@ a { color: var(--accent); }
   border-left: 3px solid var(--border-strong); color: var(--text-muted);
 }
 .prose code {
-  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: .87em; padding: .12em .38em;
-  background: var(--accent-soft); border-radius: 4px;
+  background: var(--accent-soft); border-radius: var(--radius-code);
 }
 .prose pre {
   background: var(--bg-elev); border: 1px solid var(--border);
-  border-radius: 8px; padding: 1rem; overflow-x: auto;
+  border-radius: var(--radius-block); padding: 1rem; overflow-x: auto;
 }
 .prose pre code { background: none; padding: 0; }
 
@@ -340,7 +626,7 @@ a { color: var(--accent); }
 .prose table {
   width: 100%; border-collapse: collapse;
   font-size: .93rem; background: var(--bg-elev);
-  border: 1px solid var(--border); border-radius: 8px;
+  border: 1px solid var(--border); border-radius: var(--radius-block);
 }
 .prose th, .prose td {
   border-bottom: 1px solid var(--border);
@@ -362,7 +648,7 @@ a { color: var(--accent); }
   appearance: none; -webkit-appearance: none;
   width: 1.05rem; height: 1.05rem; margin-right: .55rem;
   vertical-align: -.16rem;
-  border: 1.5px solid var(--border-strong); border-radius: 4px;
+  border: 1.5px solid var(--border-strong); border-radius: var(--radius-code);
   background: var(--bg-elev);
 }
 .prose li > input[type="checkbox"]:checked {
@@ -391,7 +677,7 @@ a { color: var(--accent); }
   flex: 1 1 14rem; display: flex; flex-direction: column; gap: .1rem;
   padding: .8rem 1rem; text-decoration: none; color: inherit;
   background: var(--bg-elev); border: 1px solid var(--border);
-  border-radius: var(--radius); font-size: .95rem;
+  border-radius: var(--radius-karte); font-size: .95rem;
 }
 .pager a:hover { border-color: var(--accent); }
 .pager a span { color: var(--text-muted); font-size: .78rem; font-weight: 600; }
@@ -403,18 +689,85 @@ a { color: var(--accent); }
   color: var(--text-muted); font-size: .86rem;
 }
 .site-footer p { margin: 0 0 .25rem; }
-.footer-meta { opacity: .75; font-size: .8rem; }
+.footer-meta { font-family: var(--font-meta); opacity: .75; font-size: .8rem; }
 
-/* --- Druck --------------------------------------------------------------- */
+/* --- 5. Design-spezifische Feinheiten ------------------------------------ */
+
+/* Die Emoji-Symbole gehören zum Standarddesign; die drei anderen kommen ohne
+   aus. Sie stehen im Markup und werden hier nur ausgeblendet. */
+:root[data-thema="raster"] .brand-icon,
+:root[data-thema="heft"] .brand-icon,
+:root[data-thema="werkstatt"] .brand-icon,
+:root[data-thema="raster"] .block-icon,
+:root[data-thema="heft"] .block-icon,
+:root[data-thema="werkstatt"] .block-icon { display: none; }
+
+/* Raster: keine Flächen. Lektionen sind Zeilen in einer Liste, die Nummer ist
+   ein typografischer Anker statt eines gefüllten Quadrats. */
+:root[data-thema="raster"] .site-header { border-bottom-width: 2px; border-bottom-color: var(--text); }
+:root[data-thema="raster"] .hero { padding-block: 3.5rem 2.5rem; }
+:root[data-thema="raster"] .lektion-list { gap: 0; border-top: 1px solid var(--border-strong); }
+:root[data-thema="raster"] .lektion-list > li > a {
+  border: 0; border-bottom: 1px solid var(--border); padding-inline: 0;
+}
+:root[data-thema="raster"] .lektion-list > li > a:hover { transform: none; background: var(--accent-soft); }
+:root[data-thema="raster"] .lektion-nr {
+  background: none; width: auto; min-width: 2.6rem; height: auto;
+  place-items: baseline start; font-size: 2rem; font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+:root[data-thema="raster"] .material-block,
+:root[data-thema="raster"] .quick-col,
+:root[data-thema="raster"] .pager a { background: none; }
+:root[data-thema="raster"] .badge {
+  background: none; color: var(--text-muted);
+  border: 1px solid var(--border-strong); padding: .05rem .45rem;
+}
+:root[data-thema="raster"] .badge-zielgruppe-lp  { color: var(--lp);  border-color: var(--lp); }
+:root[data-thema="raster"] .badge-zielgruppe-sus { color: var(--sus); border-color: var(--sus); }
+:root[data-thema="raster"] .section-title { border-bottom-color: var(--text); border-bottom-width: 2px; }
+
+/* Einseitige Kanten und runde Ecken vertragen sich schlecht. Im Standarddesign
+   bleibt es wie bisher; wo ein Design eigene Radien setzt, wird links gerade. */
+:root[data-thema="heft"] .block-ablauf,
+:root[data-thema="heft"] .block-lehrperson,
+:root[data-thema="heft"] .block-sus,
+:root[data-thema="werkstatt"] .block-ablauf,
+:root[data-thema="werkstatt"] .block-lehrperson,
+:root[data-thema="werkstatt"] .block-sus {
+  border-start-start-radius: 0; border-end-start-radius: 0;
+}
+
+/* Arbeitsheft: Vorspann und Kennzeichnungen in Monospace, ruhigere Kanten. */
+:root[data-thema="heft"] .hero { border-bottom-style: solid; }
+:root[data-thema="heft"] .eyebrow { font-weight: 500; }
+:root[data-thema="heft"] .lead { font-family: var(--font-head); font-style: italic; }
+:root[data-thema="heft"] .lektion-nr { font-family: var(--font-meta); font-weight: 500; }
+:root[data-thema="heft"] .badge { font-weight: 500; }
+:root[data-thema="heft"] .prose h2 { border-bottom-color: var(--border-strong); }
+
+/* Werkstatt: Navigation und Kürzel in Monospace, klein geschrieben. */
+:root[data-thema="werkstatt"] .site-nav a,
+:root[data-thema="werkstatt"] .lektion-nr,
+:root[data-thema="werkstatt"] .mini-nr { font-family: var(--font-meta); font-weight: 500; }
+:root[data-thema="werkstatt"] .brand-text strong { font-family: var(--font-meta); font-weight: 500; text-transform: lowercase; }
+:root[data-thema="werkstatt"] .lektion-nr { font-size: .9rem; }
+:root[data-thema="werkstatt"] .lektion-list > li > a:hover { transform: none; }
+
+/* --- 6. Druckansicht ----------------------------------------------------- */
+/* :root[data-thema] wiegt gleich schwer wie die Designblöcke oben und steht
+   später – so drucken alle vier Designs identisch. */
 
 @media print {
-  :root {
+  :root, :root[data-thema] {
     --bg: #fff; --bg-elev: #fff; --text: #000; --text-muted: #333;
     --border: #bbb; --border-strong: #666; --accent: #000; --accent-soft: #f2f2f2;
-    --shadow: none;
+    --shadow: none; --hero-bg: none; --header-filter: none;
+    --radius-karte: 0; --radius-feld: 0; --radius-block: 0;
+    --radius-knopf: 0; --radius-marke: 0; --radius-code: 0; --radius-pill: 0;
   }
   body { font-size: 11.5pt; line-height: 1.45; background: #fff; }
-  .site-header, .site-footer, .pager, .breadcrumb, .print-btn, .skip-link { display: none !important; }
+  .site-header, .site-footer, .pager, .breadcrumb, .print-btn, .skip-link, .thema-wahl { display: none !important; }
   .wrap, .wrap-narrow { width: 100%; }
   .prose { max-width: none; }
   .material-bar { margin-bottom: .8rem; }
