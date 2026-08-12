@@ -16,8 +16,8 @@
 
    EIN DESIGN ÄNDERN ODER ERGÄNZEN
    Ein Design ist nichts weiter als ein Variablenblock in Abschnitt 3. Wer ein
-   viertes hinzufügen will, kopiert einen Block, vergibt einen neuen Namen und
-   trägt ihn in _layouts/default.html in die Auswahlliste ein.
+   weiteres hinzufügen will, kopiert einen Block, vergibt einen neuen Namen und
+   trägt ihn in _layouts/default.html in beide Listen ein (erlaubt und designs).
    ========================================================================== */
 
 /* --- 1. Schriften -------------------------------------------------------- */
@@ -198,7 +198,7 @@
   --border-strong: #c4bcae;
   --accent:        #9a4f2b;
   --accent-soft:   #f4e9e2;
-  --lp:            #8a6a1f;
+  --lp:            #7a5c13;
   --lp-soft:       #f7f0dd;
   --sus:           #2c6350;
   --sus-soft:      #e7f0ea;
@@ -235,57 +235,6 @@
     --lp-soft:       #2e2718;
     --sus:           #7cc3a6;
     --sus-soft:      #1b2b24;
-  }
-}
-
-/* 3c. Werkstatt – flach statt plastisch, Monospace für Navigation und Kürzel */
-
-:root[data-thema="werkstatt"] {
-  --bg:            #f6f6f4;
-  --bg-elev:       #ffffff;
-  --text:          #17191c;
-  --text-muted:    #5d6470;
-  --border:        #e0e1e4;
-  --border-strong: #bfc2c8;
-  --accent:        #8f3f66;
-  --accent-soft:   #f8ecf3;
-  --lp:            #8a5f14;
-  --lp-soft:       #fbf2e2;
-  --sus:           #1c6350;
-  --sus-soft:      #e6f2ee;
-
-  --font-body: "Inter var", "Segoe UI", system-ui, sans-serif;
-  --font-head: var(--font-body);
-  --font-meta: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-  --head-weight:   600;
-  --tr-hero: -.03em; --tr-h1: -.025em; --tr-h2: -.018em; --tr-h3: -.012em; --tr-h4: -.006em;
-  --label-transform: none;
-  --label-tracking:  .02em;
-
-  --radius-karte: 6px; --radius-feld: 5px; --radius-block: 5px;
-  --radius-knopf: 4px; --radius-marke: 3px; --radius-code: 3px; --radius-pill: 4px;
-  --shadow: none;
-  --hero-bg: none;
-  --header-bg: var(--bg);
-  --header-filter: none;
-  --block-line: 3px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root[data-thema="werkstatt"] {
-    --bg:            #14161a;
-    --bg-elev:       #1b1e23;
-    --text:          #e7e9ee;
-    --text-muted:    #969db0;
-    --border:        #2a2e36;
-    --border-strong: #434955;
-    --accent:        #e59ac0;
-    --accent-soft:   #2e1b26;
-    --lp:            #dfae5c;
-    --lp-soft:       #2a2215;
-    --sus:           #6cc9aa;
-    --sus-soft:      #13241e;
   }
 }
 
@@ -350,36 +299,26 @@ a { color: var(--accent); }
 .site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
 .site-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
 
-/* Design-Auswahl. Ohne JavaScript bleibt sie über das hidden-Attribut
-   ausgeblendet – dann greift schlicht das Standarddesign. */
-.thema-wahl { display: flex; align-items: center; gap: .4rem; }
-.thema-wahl[hidden] { display: none; }
-.thema-wahl label { font-size: .78rem; color: var(--text-muted); }
-.thema-wahl select {
-  font: inherit; font-size: .85rem;
-  padding: .25rem 1.6rem .25rem .5rem; cursor: pointer;
-  color: var(--text); background: var(--bg-elev);
-  border: 1px solid var(--border-strong); border-radius: var(--radius-knopf);
-  appearance: none; -webkit-appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
-                    linear-gradient(135deg, currentColor 50%, transparent 50%);
-  background-position: right 0.75rem center, right 0.5rem center;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
+/* Design-Umschalter: ein kleiner Knopf, der der Reihe nach durchschaltet.
+   Ohne JavaScript bleibt er über das hidden-Attribut ausgeblendet – dann
+   greift schlicht das Standarddesign. */
+.thema-schalter {
+  font: inherit; font-size: .78rem; font-weight: 600;
+  padding: .2rem .55rem; cursor: pointer;
+  color: var(--text-muted); background: none;
+  border: 1px solid var(--border); border-radius: var(--radius-knopf);
+  white-space: nowrap;
+  transition: color .15s, border-color .15s;
 }
-.thema-wahl select:hover { border-color: var(--accent); color: var(--accent); }
+.thema-schalter[hidden] { display: none; }
+.thema-schalter:hover { color: var(--accent); border-color: var(--accent); }
 
-/* Auf dem Handy passen Wortmarke, Lektionsnummern und Auswahl nicht in eine
-   Zeile. Sie rücken darum auf eine zweite; die Beschriftung „Design" bleibt
-   für Screenreader erhalten, verschwindet aber aus dem Blickfeld. */
+/* Auf dem Handy passen Wortmarke, Lektionsnummern und Knopf nicht in eine
+   Zeile – sie rücken darum auf eine zweite. */
 @media (max-width: 30rem) {
   .header-inner { gap: .4rem; }
   .header-tools { width: 100%; margin-left: 0; justify-content: space-between; gap: .5rem; }
   .site-nav a { min-width: 2.1rem; padding-inline: .35rem; }
-  .thema-wahl label {
-    position: absolute; width: 1px; height: 1px;
-    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
-  }
 }
 
 /* --- Startseite ---------------------------------------------------------- */
@@ -693,14 +632,12 @@ a { color: var(--accent); }
 
 /* --- 5. Design-spezifische Feinheiten ------------------------------------ */
 
-/* Die Emoji-Symbole gehören zum Standarddesign; die drei anderen kommen ohne
-   aus. Sie stehen im Markup und werden hier nur ausgeblendet. */
+/* Die Emoji-Symbole gehören zum Standarddesign; die beiden anderen kommen
+   ohne aus. Sie stehen im Markup und werden hier nur ausgeblendet. */
 :root[data-thema="raster"] .brand-icon,
 :root[data-thema="heft"] .brand-icon,
-:root[data-thema="werkstatt"] .brand-icon,
 :root[data-thema="raster"] .block-icon,
-:root[data-thema="heft"] .block-icon,
-:root[data-thema="werkstatt"] .block-icon { display: none; }
+:root[data-thema="heft"] .block-icon { display: none; }
 
 /* Raster: keine Flächen. Lektionen sind Zeilen in einer Liste, die Nummer ist
    ein typografischer Anker statt eines gefüllten Quadrats. */
@@ -731,10 +668,7 @@ a { color: var(--accent); }
    bleibt es wie bisher; wo ein Design eigene Radien setzt, wird links gerade. */
 :root[data-thema="heft"] .block-ablauf,
 :root[data-thema="heft"] .block-lehrperson,
-:root[data-thema="heft"] .block-sus,
-:root[data-thema="werkstatt"] .block-ablauf,
-:root[data-thema="werkstatt"] .block-lehrperson,
-:root[data-thema="werkstatt"] .block-sus {
+:root[data-thema="heft"] .block-sus {
   border-start-start-radius: 0; border-end-start-radius: 0;
 }
 
@@ -746,13 +680,28 @@ a { color: var(--accent); }
 :root[data-thema="heft"] .badge { font-weight: 500; }
 :root[data-thema="heft"] .prose h2 { border-bottom-color: var(--border-strong); }
 
-/* Werkstatt: Navigation und Kürzel in Monospace, klein geschrieben. */
-:root[data-thema="werkstatt"] .site-nav a,
-:root[data-thema="werkstatt"] .lektion-nr,
-:root[data-thema="werkstatt"] .mini-nr { font-family: var(--font-meta); font-weight: 500; }
-:root[data-thema="werkstatt"] .brand-text strong { font-family: var(--font-meta); font-weight: 500; text-transform: lowercase; }
-:root[data-thema="werkstatt"] .lektion-nr { font-size: .9rem; }
-:root[data-thema="werkstatt"] .lektion-list > li > a:hover { transform: none; }
+/* Die Badge-Farben des Standarddesigns sind kühl abgestimmt und beissen sich
+   mit dem Papierton. Hier dieselben Bedeutungen in Erdtönen – die Farbfamilie
+   bleibt erkennbar, die Sättigung sinkt. */
+:root[data-thema="heft"] .badge-arbeitsblatt  { background: #e2e5ec; color: #3c4a63; }
+:root[data-thema="heft"] .badge-musterloesung { background: #e8ead9; color: #46521f; }
+:root[data-thema="heft"] .badge-ablaufplan    { background: #eae0e8; color: #59374f; }
+:root[data-thema="heft"] .badge-glossar       { background: #f2e1e3; color: #6b343f; }
+:root[data-thema="heft"] .badge-auftrag       { background: #dee9e5; color: #2c554e; }
+:root[data-thema="heft"] .badge-input         { background: #f4e7d3; color: #765012; }
+:root[data-thema="heft"] .badge-info          { background: #e9e4db; color: #524d3d; }
+:root[data-thema="heft"] .badge-konzept       { background: #f4e1d8; color: #763822; }
+
+@media (prefers-color-scheme: dark) {
+  :root[data-thema="heft"] .badge-arbeitsblatt  { background: #262a35; color: #adb9d1; }
+  :root[data-thema="heft"] .badge-musterloesung { background: #262a1a; color: #b6c383; }
+  :root[data-thema="heft"] .badge-ablaufplan    { background: #2c2230; color: #c6a9c0; }
+  :root[data-thema="heft"] .badge-glossar       { background: #33222a; color: #d8a3ac; }
+  :root[data-thema="heft"] .badge-auftrag       { background: #1c2e2b; color: #91c7bc; }
+  :root[data-thema="heft"] .badge-input         { background: #33270f; color: #e0b369; }
+  :root[data-thema="heft"] .badge-info          { background: #2a2822; color: #bbb3a3; }
+  :root[data-thema="heft"] .badge-konzept       { background: #331f18; color: #dc997d; }
+}
 
 /* --- 6. Druckansicht ----------------------------------------------------- */
 /* :root[data-thema] wiegt gleich schwer wie die Designblöcke oben und steht
@@ -767,7 +716,7 @@ a { color: var(--accent); }
     --radius-knopf: 0; --radius-marke: 0; --radius-code: 0; --radius-pill: 0;
   }
   body { font-size: 11.5pt; line-height: 1.45; background: #fff; }
-  .site-header, .site-footer, .pager, .breadcrumb, .print-btn, .skip-link, .thema-wahl { display: none !important; }
+  .site-header, .site-footer, .pager, .breadcrumb, .print-btn, .skip-link, .thema-schalter { display: none !important; }
   .wrap, .wrap-narrow { width: 100%; }
   .prose { max-width: none; }
   .material-bar { margin-bottom: .8rem; }

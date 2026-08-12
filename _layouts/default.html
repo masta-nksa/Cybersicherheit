@@ -17,7 +17,7 @@
   {%- endcomment -%}
   <script>
     (function () {
-      var erlaubt = ["standard", "raster", "heft", "werkstatt"];
+      var erlaubt = ["standard", "raster", "heft"];
       try {
         var t = localStorage.getItem("thema");
         if (t && erlaubt.indexOf(t) !== -1 && t !== "standard") {
@@ -49,18 +49,10 @@
           {%- endfor %}
         </nav>
         {%- comment -%}
-          Bis das Skript am Seitenende die Auswahl aktiviert, bleibt sie
-          ausgeblendet – ohne JavaScript wäre sie wirkungslos.
+          Bis das Skript am Seitenende den Knopf aktiviert, bleibt er
+          ausgeblendet – ohne JavaScript wäre er wirkungslos.
         {%- endcomment -%}
-        <div class="thema-wahl" hidden>
-          <label for="thema-wahl">Design</label>
-          <select id="thema-wahl">
-            <option value="standard">Standard</option>
-            <option value="raster">Raster</option>
-            <option value="heft">Arbeitsheft</option>
-            <option value="werkstatt">Werkstatt</option>
-          </select>
-        </div>
+        <button type="button" class="thema-schalter" id="thema-schalter" hidden></button>
       </div>
     </div>
   </header>
@@ -77,27 +69,45 @@
   </footer>
 
   <script>
-    // 0) Design-Auswahl. Die Wahl bleibt im localStorage des Browsers – also
-    //    auf diesem Gerät, in diesem Browser, bis sie jemand löscht. Gesetzt
-    //    wird sie beim Laden bereits im <head>, hier wird nur die Bedienung
-    //    nachgerüstet.
+    // 0) Design-Umschalter. Ein Klick schaltet zum nächsten Design weiter; die
+    //    Wahl bleibt im localStorage des Browsers – also auf diesem Gerät, in
+    //    diesem Browser, bis sie jemand löscht. Gesetzt wird sie beim Laden
+    //    bereits im <head>, hier wird nur die Bedienung nachgerüstet.
     (function () {
-      var box = document.querySelector('.thema-wahl');
-      var sel = document.getElementById('thema-wahl');
-      if (!box || !sel) return;
+      var knopf = document.getElementById('thema-schalter');
+      if (!knopf) return;
+
+      var designs = [
+        { wert: 'standard', name: 'Standard' },
+        { wert: 'raster',   name: 'Raster' },
+        { wert: 'heft',     name: 'Arbeitsheft' }
+      ];
 
       var aktuell = document.documentElement.getAttribute('data-thema') || 'standard';
-      if (!sel.querySelector('option[value="' + aktuell + '"]')) aktuell = 'standard';
-      sel.value = aktuell;
-      box.hidden = false;
+      var i = designs.findIndex(function (d) { return d.wert === aktuell; });
+      if (i === -1) i = 0;
 
-      sel.addEventListener('change', function () {
-        if (sel.value === 'standard') {
+      function anzeigen() {
+        var d = designs[i];
+        var naechstes = designs[(i + 1) % designs.length];
+        knopf.textContent = d.name;
+        knopf.setAttribute('aria-label', 'Design: ' + d.name + '. Weiter zu ' + naechstes.name + '.');
+        knopf.title = 'Design wechseln';
+      }
+
+      anzeigen();
+      knopf.hidden = false;
+
+      knopf.addEventListener('click', function () {
+        i = (i + 1) % designs.length;
+        var wert = designs[i].wert;
+        if (wert === 'standard') {
           document.documentElement.removeAttribute('data-thema');
         } else {
-          document.documentElement.setAttribute('data-thema', sel.value);
+          document.documentElement.setAttribute('data-thema', wert);
         }
-        try { localStorage.setItem('thema', sel.value); } catch (e) { /* gesperrt */ }
+        try { localStorage.setItem('thema', wert); } catch (e) { /* gesperrt */ }
+        anzeigen();
       });
     })();
 
