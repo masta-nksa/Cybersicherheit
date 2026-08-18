@@ -598,13 +598,17 @@ a { color: var(--accent); }
   display: grid; place-items: center; height: 100%;
 }
 
-/* Ausfülllinien statt ________ */
+/* Schreiblinien zum Ausfüllen.
+   In den Markdown-Dateien als <span class="fill-line"></span> setzen –
+   eine Zeile aus Unterstrichen wäre in Markdown eine Trennlinie (<hr>)
+   bzw. würde als Fettschrift gelesen und zerbricht die Nummerierung. */
 .fill-line {
   display: inline-block; min-width: 12rem; max-width: 100%;
-  flex: 1; vertical-align: baseline;
+  vertical-align: baseline;
   border-bottom: 1px solid var(--border-strong);
   height: 1.35em; margin-bottom: -.25em;
 }
+.fill-line.breit { display: block; width: 100%; min-width: 0; height: 1.7em; }
 
 /* --- Pager & Fusszeile --------------------------------------------------- */
 

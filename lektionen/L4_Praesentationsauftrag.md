@@ -11,9 +11,9 @@ reihenfolge: 1
 
 **Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in Lektion 5 (ca. 4 Min.)**
 
-Mein Cluster: ______________________________
+Mein Cluster: <span class="fill-line"></span>
 
-Enthält (siehe Gruppenzettel aus Lektion 1): ______________________________
+Enthält (siehe Gruppenzettel aus Lektion 1): <span class="fill-line"></span>
 
 ## Ziel
 

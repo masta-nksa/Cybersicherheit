@@ -15,10 +15,10 @@ Sie haben in dieser Einheit neun verschiedene Angriffsarten und die passenden Sc
 
 **Was sind für Sie persönlich die 3 wichtigsten Verhaltensregeln aus dieser Einheit – Dinge, die Sie ab jetzt wirklich anders/bewusster machen?**
 
-1. ______________________________________________
+1. <span class="fill-line"></span>
 
-2. ______________________________________________
+2. <span class="fill-line"></span>
 
-3. ______________________________________________
+3. <span class="fill-line"></span>
 
 *(Sammlung im Plenum, z. B. per Padlet/Mentimeter – so entsteht eine gemeinsame Top-Liste der Klasse.)*

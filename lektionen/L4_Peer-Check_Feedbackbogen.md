@@ -11,9 +11,9 @@ reihenfolge: 2
 
 **Lektion 4 – ca. 8–10 Min. | Tauschen Sie mit einer Gruppe mit einem anderen Cluster**
 
-Unser Cluster: ______________________________
+Unser Cluster: <span class="fill-line"></span>
 
-Cluster der Partnergruppe: ______________________________
+Cluster der Partnergruppe: <span class="fill-line"></span>
 
 ## Teil 1: Prüfungsfragen beantworten
 
@@ -29,25 +29,25 @@ Beantworten Sie die 2–3 Prüfungsfragen der Partnergruppe, **ohne nachzuschlag
 
 - War jede Frage klar und eindeutig formuliert? Falls nein: welche und warum nicht?
 
-  ______________________________________________
+  <span class="fill-line breit"></span>
 
 - Konnten Sie die Fragen mit dem Wissen aus den Lektionen 1 bis 3 beantworten, oder war Spezialwissen nötig, das so nicht vermittelt wurde?
 
-  ______________________________________________
+  <span class="fill-line breit"></span>
 
 - Ein konkreter Verbesserungsvorschlag für die andere Gruppe:
 
-  ______________________________________________
+  <span class="fill-line breit"></span>
 
 ## Teil 3: Kurzfeedback zur Präsentation (falls noch Zeit)
 
 - Ein Learning aus der Präsentation der anderen Gruppe:
 
-  ______________________________________________
+  <span class="fill-line breit"></span>
 
 - Eine offene Frage/Unklarheit, die noch bleibt:
 
-  ______________________________________________
+  <span class="fill-line breit"></span>
 
 ---
 

@@ -27,11 +27,11 @@ Halten Sie während des Spielens fest, welche Angriffstechniken vorkommen und wi
 
 1. Was hat Sie beim Spielen am meisten überrascht?
 
-   ______________________________________________
+   <span class="fill-line breit"></span>
 
 2. Wo begegnen Ihnen ähnliche Situationen in Ihrem eigenen Alltag (eigenes Handy, Social Media, WLAN unterwegs, …)?
 
-   ______________________________________________
+   <span class="fill-line breit"></span>
 
 ## Teil 3: Brücke zu Ihrem Präsentationsthema
 
@@ -40,12 +40,12 @@ Sie haben in Lektion 1 ein Themencluster zugeteilt bekommen. Prüfen Sie:
 - Ist Ihr Cluster im Spiel direkt vorgekommen? Welche Begriffe aus dem Glossar gehören dazu?
 - Falls Ihr Cluster **nicht** direkt vorkam: Überlegen Sie sich mind. eine inhaltliche Verbindung zu dem, was Sie im Spiel erlebt haben (z. B. ähnliches Vorgehen, ähnliche Schutzmassnahme).
 
-Mein Cluster: ______________________________
+Mein Cluster: <span class="fill-line"></span>
 
 Verbindung(en) zum Spiel:
 
-______________________________________________
+<span class="fill-line breit"></span>
 
-______________________________________________
+<span class="fill-line breit"></span>
 
 *(Nicht fertig geworden? Ergänzen Sie diesen Teil bis zur nächsten Lektion.)*
