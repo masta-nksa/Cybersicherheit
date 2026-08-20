@@ -3,7 +3,7 @@ lektion: 1
 zielgruppe: sus
 art: info
 titel: "Gruppen- und Themenzettel"
-kurz: "Rahmen der Abschlusspräsentation und die 9 Themencluster"
+kurz: "Rahmen der Abschlusspräsentation und die 10 Themencluster"
 reihenfolge: 2
 ---
 
@@ -14,12 +14,12 @@ reihenfolge: 2
 ## Rahmen
 
 - Gruppengrösse: 2–3 Personen
-- Ihre Gruppe erhält eines von 9 Themenclustern (Zuteilung durch die Lehrperson, per Zufall)
-- In Lektion 5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 4 Min.)
+- Ihre Gruppe erhält eines von 10 Themenclustern (Zuteilung durch die Lehrperson, per Zufall)
+- In Lektion 5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 3,5 Min.)
 - Die Hauptvorbereitungszeit erhalten Sie in Lektion 4 (ganze Lektion); achten Sie aber schon in Lektion 2 (Cybertime) und Lektion 3 (Schutzmassnahmen) auf Bezüge zu Ihrem Thema
 - Sie erhalten für Ihre Gruppe einen privaten Teams-Kanal – legen Sie dort alle Unterlagen (Präsentation, Prüfungsfragen) ab
 
-## Die 9 Themencluster
+## Die 10 Themencluster
 
 | Cluster | Enthält | Schutz-Fokus |
 |---|---|---|
@@ -32,6 +32,7 @@ reihenfolge: 2
 | 7. Spionage-Software | Ransomware, Spyware, Adware | Backups, Updates, vertrauenswürdige Quellen |
 | 8. Fernzugriff & Grossangriffe | Keylogger, RAT, Botnet, DDoS | primär unternehmensseitige Massnahmen |
 | 9. Aktuelle/KI-gestützte Entwicklungen | KI-Phishing, Deepfake-Vishing, Real-Time-/Double-Phishing, SMS-Blaster | kritisches Hinterfragen auch bei „echt wirkenden" Inhalten |
+| 10. Downloads & Exploits | Drive-by-Download, Exploit, Zero-Day, Malvertising | Updates/Patches, Browser-Schutz, Software nur aus vertrauenswürdigen Quellen |
 
 ## Was am Ende in Ihrer Präsentation vorkommen soll
 

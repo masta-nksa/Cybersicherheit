@@ -11,7 +11,7 @@ reihenfolge: 2
 
 **Lektion 5 – letzte 5 Minuten**
 
-Sie haben in dieser Einheit neun verschiedene Angriffsarten und die passenden Schutzmassnahmen kennengelernt. Halten Sie zum Schluss fest:
+Sie haben in dieser Einheit zehn verschiedene Angriffsarten und die passenden Schutzmassnahmen kennengelernt. Halten Sie zum Schluss fest:
 
 **Was sind für Sie persönlich die 3 wichtigsten Verhaltensregeln aus dieser Einheit – Dinge, die Sie ab jetzt wirklich anders/bewusster machen?**
 

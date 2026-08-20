@@ -30,4 +30,4 @@ In „Cyber Crime Time – The Game" übernimmt man die Rolle einer hackenden Pe
 
 ## Für den Zuordnungsteil (Teil 3 des Arbeitsblatts)
 
-Nutzen Sie das Glossar (`L2_Glossar_Cybertime-Begriffe.md`) und die 9 Themencluster aus dem Gruppenzettel, um Ihr eigenes Cluster den im Spiel erlebten Techniken zuzuordnen – die meisten Cluster (Phishing-Familie, Angriffe unterwegs, Social Engineering) kommen im Spiel direkt vor; bei den übrigen (z. B. Schadsoftware- oder Passwort-Cluster) lohnt sich der Blick auf die *Methode* dahinter (z. B. Ausnutzen von Vertrauen, Ausnutzen von Nachlässigkeit).
+Nutzen Sie das Glossar (`L2_Glossar_Cybertime-Begriffe.md`) und die 10 Themencluster aus dem Gruppenzettel, um Ihr eigenes Cluster den im Spiel erlebten Techniken zuzuordnen – die meisten Cluster (Phishing-Familie, Angriffe unterwegs, Social Engineering) kommen im Spiel direkt vor; bei den übrigen (z. B. Schadsoftware- oder Passwort-Cluster) lohnt sich der Blick auf die *Methode* dahinter (z. B. Ausnutzen von Vertrauen, Ausnutzen von Nachlässigkeit).

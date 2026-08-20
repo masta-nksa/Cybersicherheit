@@ -20,7 +20,7 @@ permalink: /konzept.html
 - Abschluss: 2–3er-Gruppenpräsentationen zu den wichtigsten Angriffsarten + Schutzmassnahmen/Prävention
 - Durchgehender Fokus: Lebensweltbezug (Schweizer Beispiele, eigene Erfahrungen der SuS) statt reiner Begriffsvermittlung
 - Theoriebasis: die drei oinf.ch-Seiten (Schadprogramme, Virenschutz/Firewall, Schutzmassnahmen) plus punktuelle Aktualisierungen (siehe Abschnitt 6)
-- Klassengrösse: in der Regel 20–25 SuS, tendenziell eher an der oberen Grenze → Präsentationsgruppen max. 3 Personen (mind. 9 Gruppen), Gruppen bei Puzzle-Aufgaben im Unterricht (z. B. L3) dürfen grösser sein
+- Klassengrösse: in der Regel 20–25 SuS, tendenziell eher an der oberen Grenze → Präsentationsgruppen max. 3 Personen, eine Gruppe pro Cluster (10 Gruppen), Gruppen bei Puzzle-Aufgaben im Unterricht (z. B. L3) dürfen grösser sein
 - SuS arbeiten am eigenen Laptop (BYOD) – kein zusätzlicher Geräte-Support für L2 nötig
 - Cybertime lässt sich ohne Registrierung/Anmeldung direkt im Browser starten – die HubSpot-Tracking-Parameter im vorliegenden Link sind für den Einsatz unproblematisch
 - Jede Präsentationsgruppe erhält von Ihnen einen privaten Teams-Kanal zur Ablage ihrer Unterlagen (Präsentation, Prüfungsfragen)
@@ -95,7 +95,7 @@ Die SuS...
 - **Ablage:** Alle Unterlagen (Präsentation + Prüfungsfragen) werden im gruppeneigenen, privaten Teams-Kanal abgelegt
 
 ### L5 – Präsentationen & Abschluss
-- **Kurzpräsentationen** aller Gruppen (bei 9 Gruppen: ca. 4 Min. pro Gruppe = 36 Min.)
+- **Kurzpräsentationen** aller Gruppen (bei 10 Gruppen: ca. 3,5 Min. pro Gruppe = 35 Min.)
 - **Peer-Feedback:** Kurzformular pro Gruppe («1 Learning»), läuft schriftlich parallel zu den Präsentationen mit – kein zusätzlicher Zeitblock nötig
 - **Abschluss (5 Min.):** Gemeinsames Fazit – «Was sind für Sie persönlich die 3 wichtigsten Verhaltensregeln?» (z. B. Padlet/Mentimeter)
 - **Lösung:** Alle Präsentationsunterlagen aus den Teams-Kanälen gesammelt allen SuS zugänglich machen (für Absenzen und als Repetitionsgrundlage) – z. B. als weitere Dateien unter `/lsg/`
@@ -104,7 +104,7 @@ Die SuS...
 
 ## 6. Gruppenpräsentations-Auftrag: Themencluster-Vorschlag
 
-Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte Angriffsarten zu Clustern gebündelt – das ergibt sinnvollere, in sich geschlossene Präsentationen. Bei max. 3 Personen pro Präsentationsgruppe und einer Klassengrösse von bis zu 25 SuS braucht es rechnerisch mindestens 9 Gruppen (z. B. 7 × 3 + 2 × 2 Personen) – darum unten 9 gleichwertige Cluster. Bei kleineren Klassen lassen sich einzelne Cluster problemlos zusammenlegen (z. B. 2+3 oder 7+8):
+Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte Angriffsarten zu Clustern gebündelt – das ergibt sinnvollere, in sich geschlossene Präsentationen. Unten stehen 10 gleichwertige Cluster – eine Gruppe pro Cluster. Bei max. 3 Personen pro Gruppe deckt das Klassen von 20 bis 30 SuS ab (bei 25 SuS z. B. 5 × 3 + 5 × 2). Bei kleineren Klassen lassen sich einzelne Cluster problemlos zusammenlegen (z. B. 2+3, 7+8 oder 6+10):
 
 | Cluster | Enthält | Schutz-Fokus |
 |---|---|---|
@@ -117,6 +117,7 @@ Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte A
 | 7. Spionage-Software | Ransomware, Spyware, Adware | Backups, Updates, vertrauenswürdige Quellen |
 | 8. Fernzugriff & Grossangriffe | Keylogger, RAT, Botnet, DDoS | primär unternehmensseitige Massnahmen |
 | 9. Aktuelle/KI-gestützte Entwicklungen | KI-Phishing, Deepfake-Vishing, Real-Time-/Double-Phishing, SMS-Blaster | kritisches Hinterfragen auch bei «echt wirkenden» Inhalten |
+| 10. Downloads & Exploits | Drive-by-Download, Exploit, Zero-Day, Malvertising | Updates/Patches, Browser-Schutz, Software nur aus vertrauenswürdigen Quellen |
 
 **Auftragsstruktur pro Gruppe** (analog Vorjahresvorlage, leicht gestrafft):
 1. Beschreibung – was ist das, wie funktioniert es?
@@ -125,7 +126,7 @@ Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte A
 4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über die [Halbjahresberichte des Bundesamts für Cybersicherheit BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html) recherchierbar)
 5. 2–3 Prüfungsfragen inkl. Musterantwort zum eigenen Cluster
 
-**Zur Verwendung der Prüfungsfragen:** Die eingereichten Fragen können in die Prüfung einfliessen. Sie sichten/kuratieren sie nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 9 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
+**Zur Verwendung der Prüfungsfragen:** Die eingereichten Fragen können in die Prüfung einfliessen. Sie sichten/kuratieren sie nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 10 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
 
 Format bewusst offen (Slides, Plakat, kurzer Skit/Rollenspiel) – fördert Praxisnähe und Abwechslung in L5.
 

@@ -31,7 +31,7 @@ reihenfolge: 1
 - **Hook bewusst kurz halten** – dient nur als Aufhänger, keine ausführliche Diskussion. Ziel: Das Thema betrifft alle, nicht nur "Nerds" oder Unternehmen.
 - **Beim Kurzinput** die Virus-Analogie visualisieren (z. B. an der Wandtafel): Wirt = Datei/Programm, Ansteckung = Ausführen/Weitergeben, Symptome = Schadwirkung. Das erleichtert später die Unterscheidung Virus vs. Wurm.
 - **Während der Partnerarbeit** aktiv zirkulieren und gezielt nachfragen – Verbreitungsweg und Schadwirkung werden von SuS erfahrungsgemäss häufig verwechselt.
-- **Gruppeneinteilung:** Zufallsprinzip empfohlen (z. B. Kärtchen mit den 9 Clusternamen ziehen lassen) – vermeidet Diskussionen um "beliebte" Themen. Bei einer Klasse von z. B. 25 SuS ergibt sich 7 × 3 + 2 × 2 = 25 → alle 9 Cluster aus dem Konzept werden vergeben. Bei kleineren Klassen einzelne Cluster zusammenlegen (siehe Konzept, Abschnitt 6).
+- **Gruppeneinteilung:** Zufallsprinzip empfohlen (z. B. Kärtchen mit den 10 Clusternamen ziehen lassen) – vermeidet Diskussionen um "beliebte" Themen. Bei einer Klasse von z. B. 25 SuS ergibt sich 5 × 3 + 5 × 2 = 25 → alle 10 Cluster aus dem Konzept werden vergeben. Bei kleineren Klassen einzelne Cluster zusammenlegen (siehe Konzept, Abschnitt 6).
 - **Gruppen bleiben bis L5 bestehen** – wichtig, das den SuS hier schon mitzuteilen.
 - **Take-Aways** können mündlich (Handzeichen), schriftlich (Kärtchen) oder digital (Kahoot/Mentimeter) erfolgen – je nachdem, was an der Schule zur Verfügung steht.
 

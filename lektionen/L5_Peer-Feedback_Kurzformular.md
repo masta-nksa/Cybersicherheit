@@ -22,5 +22,6 @@ reihenfolge: 1
 | 7. Spionage-Software | |
 | 8. Fernzugriff & Grossangriffe | |
 | 9. Aktuelle/KI-gestützte Entwicklungen | |
+| 10. Downloads & Exploits | |
 
 *Notieren Sie zu jeder Präsentation eine Sache, die Sie mitnehmen.*
