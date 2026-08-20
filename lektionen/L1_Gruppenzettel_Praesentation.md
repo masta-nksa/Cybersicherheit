@@ -15,7 +15,7 @@ reihenfolge: 2
 
 - Gruppengrösse: 2–3 Personen
 - Ihre Gruppe erhält eines von 10 Themenclustern (Zuteilung durch die Lehrperson, per Zufall)
-- In Lektion 5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 3,5 Min.)
+- In Lektion 5 stellt jede Gruppe ihr Cluster der Klasse in einer Kurzpräsentation vor (ca. 3 Min.)
 - Die Hauptvorbereitungszeit erhalten Sie in Lektion 4 (ganze Lektion); achten Sie aber schon in Lektion 2 (Cybertime) und Lektion 3 (Schutzmassnahmen) auf Bezüge zu Ihrem Thema
 - Sie erhalten für Ihre Gruppe einen privaten Teams-Kanal – legen Sie dort alle Unterlagen (Präsentation, Prüfungsfragen) ab
 

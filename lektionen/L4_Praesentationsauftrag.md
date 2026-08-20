@@ -9,7 +9,7 @@ reihenfolge: 1
 
 # Auftrag: Abschlusspräsentation Cybersicherheit
 
-**Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in Lektion 5 (ca. 3,5 Min.)**
+**Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in Lektion 5 (ca. 3 Min.)**
 
 Mein Cluster: <span class="fill-line"></span>
 
@@ -59,5 +59,5 @@ Laden Sie am Ende der Lektion alle Unterlagen (Präsentation + Prüfungsfragen) 
 - [ ] Beschreibung, Gefährlichkeit, Schutzmassnahmen und ein reales Beispiel sind enthalten
 - [ ] Das Beispiel ist möglichst aus der Schweiz
 - [ ] 2–3 Prüfungsfragen inkl. Musterantwort sind formuliert
-- [ ] Die Präsentation passt zeitlich in ca. 3,5 Minuten
+- [ ] Die Präsentation passt zeitlich in 3 Minuten
 - [ ] Unterlagen sind im Teams-Kanal abgelegt

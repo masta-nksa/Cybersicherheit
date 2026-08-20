@@ -95,7 +95,7 @@ Die SuS...
 - **Ablage:** Alle Unterlagen (Präsentation + Prüfungsfragen) werden im gruppeneigenen, privaten Teams-Kanal abgelegt
 
 ### L5 – Präsentationen & Abschluss
-- **Kurzpräsentationen** aller Gruppen (bei 10 Gruppen: ca. 3,5 Min. pro Gruppe = 35 Min.)
+- **Kurzpräsentationen** aller Gruppen (bei 10 Gruppen: 3 Min. Redezeit plus Wechsel/Anmerkung ≈ 3,5 Min. pro Slot = 35 Min.)
 - **Peer-Feedback:** Kurzformular pro Gruppe («1 Learning»), läuft schriftlich parallel zu den Präsentationen mit – kein zusätzlicher Zeitblock nötig
 - **Abschluss (5 Min.):** Gemeinsames Fazit – «Was sind für Sie persönlich die 3 wichtigsten Verhaltensregeln?» (z. B. Padlet/Mentimeter)
 - **Lösung:** Alle Präsentationsunterlagen aus den Teams-Kanälen gesammelt allen SuS zugänglich machen (für Absenzen und als Repetitionsgrundlage) – z. B. als weitere Dateien unter `/lsg/`

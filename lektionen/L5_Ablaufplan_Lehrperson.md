@@ -18,7 +18,7 @@ reihenfolge: 1
 | Zeit | Phase | Inhalt | Sozialform |
 |---|---|---|---|
 | 0–3' | Einstieg | Ablauf erklären, Reihenfolge der Gruppen bekanntgeben, Timer-Regel ansagen, Peer-Feedback-Formular austeilen | Plenum |
-| 3–38' | Kurzpräsentationen | 10 Gruppen × ca. 3,5 Min. | Plenum, wechselnd |
+| 3–38' | Kurzpräsentationen | 10 Gruppen × 3 Min. Redezeit + ca. 30 Sek. Wechsel/Anmerkung | Plenum, wechselnd |
 | 38–45' | Abschluss-Fazit | Top-3-Verhaltensregeln festhalten (Abschluss-Kärtchen) | Einzeln → Plenum |
 
 ---
@@ -40,6 +40,6 @@ Die zehn Cluster folgen einer sinnvollen thematischen Dramaturgie – ich empfeh
 
 ## Hinweise zur Durchführung
 
-- **Timer strikt durchsetzen:** Sichtbarer Countdown (z. B. Beamer), Ansage bei 30 Sekunden verbleibend. Bei 10 Gruppen gibt es keinen Zeitpuffer – ein konsequentes Timing ist entscheidend, damit auch das Fazit noch genug Platz hat.
+- **Timer strikt durchsetzen:** Sichtbarer Countdown (z. B. Beamer) auf 3 Minuten, Ansage bei 30 Sekunden verbleibend. Die restlichen ca. 30 Sekunden pro Slot sind für Gruppenwechsel und eine kurze Anmerkung Ihrerseits eingeplant – mehr Puffer gibt es bei 10 Gruppen nicht.
 - **Peer-Feedback läuft mit:** Erklären Sie zu Beginn, dass das Kurzformular **während** jeder Präsentation (nicht erst am Schluss) ausgefüllt wird – so bleibt am Ende kein zusätzlicher Zeitblock nötig.
 - **Nach der Lektion:** Sammeln Sie alle Präsentationsunterlagen aus den Teams-Kanälen und stellen Sie sie zentral allen SuS zur Verfügung – z. B. als weitere Dateien im Ordner `lsg/` dieser Website. Das dient als Repetitionsgrundlage und als Lösung für allfällige Absenzen in Lektion 5.
