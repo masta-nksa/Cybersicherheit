@@ -123,7 +123,7 @@ Statt wie bisher 12 Einzelbegriffe rein additiv zu verteilen, werden verwandte A
 1. Beschreibung – was ist das, wie funktioniert es?
 2. Gefährlichkeit – für Privatpersonen vs. Unternehmen
 3. Schutzmassnahmen – konkret und alltagstauglich
-4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über die [Halbjahresberichte des Bundesamts für Cybersicherheit BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html) recherchierbar)
+4. Reales Beispiel – idealerweise ein Schweizer Fall (z. B. über die [Halbjahresberichte des Bundesamts für Cybersicherheit BACS](https://www.bacs.admin.ch/de/lageberichte) recherchierbar)
 5. 2–3 Prüfungsfragen inkl. Musterantwort zum eigenen Cluster
 
 **Zur Verwendung der Prüfungsfragen:** Die eingereichten Fragen können in die Prüfung einfliessen. Sie sichten/kuratieren sie nach L4 kurz (Dubletten bereinigen, Formulierung glätten) und setzen daraus einen Test zusammen (z. B. 1–2 Fragen pro Cluster, deckt alle 10 Themen ab). Der Test findet **im Anschluss an die 5 Lektionen** statt, auf **exam.net**.
@@ -138,7 +138,7 @@ Format bewusst offen (Slides, Plakat, kurzer Skit/Rollenspiel) – fördert Prax
 
 Die oinf.ch-Grundlagen sind inhaltlich weiterhin solide, folgende Ergänzungen erhöhen die Aktualität:
 - **2-Faktor-Authentifizierung / Passkeys** als Ergänzung zu «gute Passwörter» (damals nur Passwort-Hygiene)
-- **KI-gestützte Angriffe:** Laut Bundesamt für Cybersicherheit (BACS) werden Phishing-Nachrichten zunehmend gezielter und überzeugender, teils mit KI erstellt ([Halbjahresberichte des BACS](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html))
+- **KI-gestützte Angriffe:** Laut Bundesamt für Cybersicherheit (BACS) werden Phishing-Nachrichten zunehmend gezielter und überzeugender, teils mit KI erstellt ([Halbjahresberichte des BACS](https://www.bacs.admin.ch/de/lageberichte))
 - **Quishing** (QR-Code-Phishing) als neue Variante neben Mail/SMS/Anruf
 - **SMS-Blaster:** Seit Sommer 2025 auch in der Schweiz beobachtet – umgehen Filter der Telekom-Anbieter ([BACS, Halbjahresbericht 2025/2](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte/halbjahresbericht-2025-2.html))
 - **Real-Time- und Double-Phishing:** Gefälschte Bezahl-Werbeanzeigen in Suchmaschinen, die auf Fake-E-Banking-Seiten führen; zweistufige Betrugsmaschen per Telefon-Nachfassen

@@ -6,7 +6,7 @@ titel: "Übersicht"
 <!--
   Zahlen jährlich aktualisieren – die verlinkten Quellen sind alle offiziell:
   · BACS-Halbjahresberichte (neue Ausgabe jeweils Frühling/Herbst):
-    https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html
+    https://www.bacs.admin.ch/de/lageberichte
   · BACS «Aktuelle Zahlen» wird wöchentlich aktualisiert
   · Stand dieser Angaben: Halbjahresbericht 2025/2, veröffentlicht März 2026
 -->

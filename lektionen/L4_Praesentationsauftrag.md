@@ -34,7 +34,7 @@ Konkrete, alltagstaugliche Tipps. Greifen Sie, wo passend, auf die Schutzmassnah
 ### 4. Reales Beispiel
 Recherchieren Sie einen echten Vorfall, idealerweise aus der Schweiz. Was war die Ursache, wie wurde er entdeckt/abgewehrt (oder eben nicht)?
 
-**Rechercheidee:** Die [Halbjahresberichte des Bundesamts für Cybersicherheit (BACS)](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte.html) enthalten regelmässig aktuelle Fallbeispiele aus der Schweiz. Ebenfalls nützlich: die [aktuellen Meldungszahlen des BACS](https://www.ncsc.admin.ch/ncsc/de/home/aktuell/aktuelle-zahlen.html) und die Statistik [Digitale Kriminalität des Bundesamts für Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht/polizei/digitale-kriminalitaet.html).
+**Rechercheidee:** Die [Halbjahresberichte des Bundesamts für Cybersicherheit (BACS)](https://www.bacs.admin.ch/de/lageberichte) enthalten regelmässig aktuelle Fallbeispiele aus der Schweiz. Ebenfalls nützlich: die [aktuellen Meldungszahlen des BACS](https://www.ncsc.admin.ch/ncsc/de/home/aktuell/aktuelle-zahlen.html) und die Statistik [Digitale Kriminalität des Bundesamts für Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht/polizei/digitale-kriminalitaet.html).
 
 Geben Sie in Ihrer Präsentation an, woher Ihre Zahlen und Ihr Beispiel stammen.
 
