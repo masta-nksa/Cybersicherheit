@@ -140,9 +140,9 @@ Die oinf.ch-Grundlagen sind inhaltlich weiterhin solide, folgende Ergänzungen e
 - **2-Faktor-Authentifizierung / Passkeys** als Ergänzung zu «gute Passwörter» (damals nur Passwort-Hygiene)
 - **KI-gestützte Angriffe:** Laut Bundesamt für Cybersicherheit (BACS) werden Phishing-Nachrichten zunehmend gezielter und überzeugender, teils mit KI erstellt ([Halbjahresberichte des BACS](https://www.bacs.admin.ch/de/lageberichte))
 - **Quishing** (QR-Code-Phishing) als neue Variante neben Mail/SMS/Anruf
-- **SMS-Blaster:** Seit Sommer 2025 auch in der Schweiz beobachtet – umgehen Filter der Telekom-Anbieter ([BACS, Halbjahresbericht 2025/2](https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte/halbjahresbericht-2025-2.html))
+- **SMS-Blaster:** Seit Sommer 2025 auch in der Schweiz beobachtet – umgehen Filter der Telekom-Anbieter ([BACS, Halbjahresbericht 2025/2](https://www.bacs.admin.ch/de/hjb-25-2-de))
 - **Real-Time- und Double-Phishing:** Gefälschte Bezahl-Werbeanzeigen in Suchmaschinen, die auf Fake-E-Banking-Seiten führen; zweistufige Betrugsmaschen per Telefon-Nachfassen
-- **Meldepflicht kritischer Infrastrukturen** seit 1.4.2025 gegenüber dem BACS – als Beispiel, dass Cybersicherheit auch politisch/gesetzlich zunehmend reguliert wird ([Informationen zur Meldepflicht, BACS](https://www.ncsc.admin.ch/ncsc/de/home/meldepflicht/meldepflicht-info.html))
+- **Meldepflicht kritischer Infrastrukturen** seit 1.4.2025 gegenüber dem BACS – als Beispiel, dass Cybersicherheit auch politisch/gesetzlich zunehmend reguliert wird ([Informationen zur Meldepflicht, BACS](https://www.bacs.admin.ch/de/informationen-zur-meldepflicht))
 
 Diese Punkte eignen sich gut zur Integration in die Schutzmassnahmen-Pakete in L3 und als Rechercheanstoss für Cluster 9.
 

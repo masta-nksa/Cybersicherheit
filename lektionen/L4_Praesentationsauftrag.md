@@ -11,10 +11,6 @@ reihenfolge: 1
 
 **Lektion 4 – Gruppenarbeit | ganze Lektion | Präsentation in Lektion 5 (ca. 3 Min.)**
 
-Mein Cluster: <span class="fill-line"></span>
-
-Enthält (siehe Gruppenzettel aus Lektion 1): <span class="fill-line"></span>
-
 ## Ziel
 
 Sie werden zu Expertinnen und Experten für Ihr Cluster und vermitteln der Klasse in Lektion 5 kompakt und lebensnah, was man darüber wissen sollte. Ihre Prüfungsfragen (Teil 5) können in die Prüfung einfliessen.
@@ -34,7 +30,7 @@ Konkrete, alltagstaugliche Tipps. Greifen Sie, wo passend, auf die Schutzmassnah
 ### 4. Reales Beispiel
 Recherchieren Sie einen echten Vorfall, idealerweise aus der Schweiz. Was war die Ursache, wie wurde er entdeckt/abgewehrt (oder eben nicht)?
 
-**Rechercheidee:** Die [Halbjahresberichte des Bundesamts für Cybersicherheit (BACS)](https://www.bacs.admin.ch/de/lageberichte) enthalten regelmässig aktuelle Fallbeispiele aus der Schweiz. Ebenfalls nützlich: die [aktuellen Meldungszahlen des BACS](https://www.ncsc.admin.ch/ncsc/de/home/aktuell/aktuelle-zahlen.html) und die Statistik [Digitale Kriminalität des Bundesamts für Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht/polizei/digitale-kriminalitaet.html).
+**Rechercheidee:** Die [Halbjahresberichte des Bundesamts für Cybersicherheit (BACS)](https://www.bacs.admin.ch/de/lageberichte) enthalten regelmässig aktuelle Fallbeispiele aus der Schweiz. Ebenfalls nützlich: die [aktuellen Meldungszahlen des BACS](https://www.bacs.admin.ch/de/aktuelle-zahlen) und die Statistik [Digitale Kriminalität des Bundesamts für Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht/polizei/digitale-kriminalitaet.html).
 
 Geben Sie in Ihrer Präsentation an, woher Ihre Zahlen und Ihr Beispiel stammen.
 

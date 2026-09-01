@@ -29,7 +29,7 @@ Genau darum geht es hier: verstehen, wie die Angriffe funktionieren – und wiss
 man dagegen tut.
 
 <p class="quellen"><strong>Quellen:</strong>
-<a href="https://www.ncsc.admin.ch/ncsc/de/home/dokumentation/berichte/lageberichte/halbjahresbericht-2025-2.html">BACS, Halbjahresbericht 2025/2</a> ·
-<a href="https://www.ncsc.admin.ch/ncsc/de/home/aktuell/aktuelle-zahlen.html">BACS, Aktuelle Zahlen</a> ·
+<a href="https://www.bacs.admin.ch/de/hjb-25-2-de">BACS, Halbjahresbericht 2025/2</a> ·
+<a href="https://www.bacs.admin.ch/de/aktuelle-zahlen">BACS, Aktuelle Zahlen</a> ·
 <a href="https://dievolkswirtschaft.ch/de/2025/11/cyberkriminalitaet-den-taetern-auf-der-spur/">Die Volkswirtschaft (WBF/SECO): Cyberkriminalität – Den Tätern auf der Spur</a> ·
 <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht/polizei/digitale-kriminalitaet.html">BFS, Digitale Kriminalität</a></p>
