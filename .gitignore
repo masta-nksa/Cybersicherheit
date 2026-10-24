@@ -11,3 +11,10 @@ vendor/
 Thumbs.db
 desktop.ini
 *.tmp
+
+# Prüfungen und Korrekturen: niemals auf GitHub
+pruefung/
+*.pdf
+*.PDF
+Korrekturtabelle_*
+Musterloesung_und_Korrektur_*
